@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages",
+        "/home/redpaladin/ros2_ws_test/build/my_robot_controller",
+        "/home/redpaladin/ros2_ws_test/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages",
+        "/home/redpaladin/ros2_ws_test/build/my_robot_controller",
+        "/home/redpaladin/ros2_ws_test/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

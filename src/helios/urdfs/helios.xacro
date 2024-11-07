@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0.0 0.0 0.0 1.0"/>
+    </material>
+
+    <material name="white_grey">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+    </material>
+
+    <material name="black_grey">
+        <color rgba="0.3 0.3 0.3 1.0"/>
+    </material>
+    
+    <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <xacro:macro name="propeller_link" params="pref suff">
+        <link name="${pref}_propeller_${suff}">
+            <visual>
+                <geometry> 
+                    <cylinder radius="0.02" length="0.01"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <material name="red"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="0.02" length="0.01"/>
+                </geometry>
+            </collision>
+        </link>
+    </xacro:macro>
+
+    <xacro:macro name="stand_link" params="num">
+        <link name="stand_${num}">
+            <visual>
+                <geometry>
+                    <cylinder radius="0.01" length="0.05"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <material name="white"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="0.01" length="0.05"/>
+                </geometry>
+            </collision>
+        </link>
+    </xacro:macro>
+
+</robot>

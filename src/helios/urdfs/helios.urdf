@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="helios">
+
+    <xacro:include filename="helios.xacro"/>
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.2 0.2 0.05"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.075" rpy="0.0 0.0 0.0"/>
+            <material name="black"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.2 0.2 0.05"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.075" rpy="0.0 0.0 0.0"/>
+        </collision>
+    </link>
+
+    <!-- Propeller links -->
+
+    <xacro:propeller_link pref="right" suff="1"/>
+
+    <xacro:propeller_link pref="right" suff="2"/>
+
+    <xacro:propeller_link pref="left" suff="1"/>
+
+    <xacro:propeller_link pref="left" suff="2"/>
+
+    <!-- Propeller Joints-->
+
+    <joint name="rp1_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_propeller_1"/>
+        <origin xyz="0.1 0.1 0.1" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+    <joint name="rp2_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_propeller_2"/>
+        <origin xyz="0.1 -0.1 0.1" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+    <joint name="lp1_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_propeller_1"/>
+        <origin xyz="-0.1 0.1 0.1" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+    <joint name="lp2_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_propeller_2"/>
+        <origin xyz="-0.1 -0.1 0.1" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 1.0"/>
+    </joint>
+
+    <!-- Stand links -->
+    <xacro:stand_link  num="1"/>
+
+    <xacro:stand_link  num="2"/>
+
+    <xacro:stand_link  num="3"/>
+
+    <xacro:stand_link  num="4"/>
+
+    <!-- Stand joints -->
+    <joint name="stand_1_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="stand_1"/>
+        <origin xyz="0.1 0.1 0.025" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="stand_2_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="stand_2"/>
+        <origin xyz="0.1 -0.1 0.025" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="stand_3_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="stand_3"/>
+        <origin xyz="-0.1 0.1 0.025" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="stand_4_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="stand_4"/>
+        <origin xyz="-0.1 -0.1 0.025" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Sensor Links-->
+    <link name="camera_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.04 0.04 0.04"/>
+            </geometry>
+            <material name="black_grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.04 0.04 0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="lidar_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.03 0.03 0.03"/>
+            </geometry>
+            <material name="white_grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.03 0.03 0.03"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Sensor Joints-->
+    <joint name="camera_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="camera_link"/>
+        <origin xyz="0.0 0.0 0.025" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar_link"/>
+        <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <!-- Gazebo Sensor Plugin -->
+    <gazebo reference="camera_link">
+        <sensor type="camera" name="camera_sensor">
+            <update_rate>30</update_rate>
+            <camera>
+                <horizontal_fov>1.047</horizontal_fov>
+                <image>
+                    <width>640</width>
+                    <height>480</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.1</near>
+                    <far>100</far>
+                </clip>
+            </camera>
+            <plugin name="gazebo_ros_camera" filename="libgazebo_ros_camera.so"/>
+        </sensor>
+    </gazebo>
+
+    <gazebo reference="lidar_link">
+        <sensor type="gpu_ray" name="lidar_sensor">
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>720</samples>
+                        <resolution>1</resolution>
+                        <min_angle>-1.57</min_angle>
+                        <max_angle>1.57</max_angle>
+                    </horizontal>
+                    <vertical>
+                        <samples>1</samples>
+                        <min_angle>0</min_angle>
+                        <max_angle>0</max_angle>
+                    </vertical>
+                </scan>
+                <range>
+                    <min>0.2</min>
+                    <max>30.0</max>
+                    <resolution>0.01</resolution>
+                </range>
+            </ray>
+            <plugin name="gazebo_ros_laser" filename="libgazebo_ros_gpu_laser.so"/>
+        </sensor>
+    </gazebo>
+    
+</robot>
