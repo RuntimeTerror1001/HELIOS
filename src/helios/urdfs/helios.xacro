@@ -2,6 +2,7 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <!-- Colors-->
     <material name="red">
         <color rgba="1.0 0.0 0.0 1.0"/>
     </material>
@@ -22,6 +23,24 @@
         <color rgba="1.0 1.0 1.0 1.0"/>
     </material>
 
+    <!-- Properties-->
+    <xacro:property name="propeller_mass" value="0.05"/>
+    <xacro:property name="propeller_rad" value="0.02"/>
+    <xacro:property name="propeller_ht" value="0.01"/>
+
+    <xacro:property name="stand_mass" value="0.02"/>
+    <xacro:property name="stand_rad" value="0.01"/>
+    <xacro:property name="stand_ht" value="0.05"/>
+
+    <!-- Macros-->
+    <xacro:macro name="cyl_inertia" params="mass rad ht">
+        <inertia ixx="{(mass/12)*(3*rad*rad+ht*ht)}" ixy="0.0" ixz="0.0" iyy="{(mass/12)*(3*rad*rad+ht*ht)}" iyz="0.0" izz="{(mass/2)*(rad*rad)}"/>
+    </xacro:macro>
+
+    <xacro:macro name="box_inertia" params="mass w d h">
+        <inertia ixx="{(mass/12)*(h*h+d*d)}" ixy="0.0" ixz="0.0" iyy="{(mass/12)*(w*w+h*h)}" iyz="0.0" izz="{(mass/12)*(w*w+d*d)}"/>
+    </xacro:macro>
+
     <xacro:macro name="propeller_link" params="pref suff">
         <link name="${pref}_propeller_${suff}">
             <visual>
@@ -32,10 +51,16 @@
                 <material name="red"/>
             </visual>
             <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
                 <geometry>
                     <cylinder radius="0.02" length="0.01"/>
                 </geometry>
             </collision>
+            <inertial>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <mass value="${propeller_mass}"/>
+                <xacro:cyl_inertia mass="{propeller_mass}" rad="{propeller_rad}" ht="{propeller_ht}"/>
+            </inertial>
         </link>
     </xacro:macro>
 
@@ -49,10 +74,16 @@
                 <material name="white"/>
             </visual>
             <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
                 <geometry>
                     <cylinder radius="0.01" length="0.05"/>
                 </geometry>
             </collision>
+            <inertial>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <mass value="${stand_mass}"/>
+                <xacro:cyl_inertia mass="{stand_mass}" rad="{stand_rad}" ht="{stand_ht}"/>
+            </inertial>
         </link>
     </xacro:macro>
 
