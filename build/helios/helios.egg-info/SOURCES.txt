@@ -4,11 +4,11 @@ setup.py
 ../../build/helios/helios.egg-info/PKG-INFO
 ../../build/helios/helios.egg-info/SOURCES.txt
 ../../build/helios/helios.egg-info/dependency_links.txt
-../../build/helios/helios.egg-info/entry_points.txt
 ../../build/helios/helios.egg-info/requires.txt
 ../../build/helios/helios.egg-info/top_level.txt
 ../../build/helios/helios.egg-info/zip-safe
 helios/__init__.py
+launch/gazebo.launch.py
 resource/helios
 test/test_copyright.py
 test/test_flake8.py

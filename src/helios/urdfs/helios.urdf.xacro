@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="helios">
+
+    <!-- Colors -->
+    <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0.0 0.0 0.0 1.0"/>
+    </material>
+
+    <material name="white_grey">
+        <color rgba="0.7 0.7 0.7 1.0"/>
+    </material>
+
+    <material name="black_grey">
+        <color rgba="0.3 0.3 0.3 1.0"/>
+    </material>
+    
+    <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <!-- Properties -->
+    <xacro:property name="propeller_mass" value="0.05"/>
+    <xacro:property name="propeller_rad" value="0.02"/>
+    <xacro:property name="propeller_ht" value="0.01"/>
+
+    <xacro:property name="stand_mass" value="0.02"/>
+    <xacro:property name="stand_rad" value="0.01"/>
+    <xacro:property name="stand_ht" value="0.05"/>
+
+    <!-- Macros -->
+    <!-- CYLINDRICAL INERTIA -->
+    <xacro:macro name="cyl_inertia" params="mass rad ht">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="${mass}" />
+            <inertia 
+                ixx="${mass * (3 * rad * rad + ht * ht) / 12}" 
+                ixy="0.0" 
+                ixz="0.0"
+                iyy="${mass * (3 * rad * rad + ht * ht) / 12}" 
+                iyz="0.0" 
+                izz="${mass * rad * rad / 2}" />
+        </inertial>
+    </xacro:macro>
+
+    <!-- BOX INERTIA -->
+    <xacro:macro name="box_inertia" params="mass w d h">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="${mass}" />
+            <inertia 
+                ixx="${mass * (h * h + d * d) / 12}" 
+                ixy="0.0" 
+                ixz="0.0"
+                iyy="${mass * (w * w + h * h) / 12}" 
+                iyz="0.0" 
+                izz="${mass * (w * w + d * d) / 12}" />
+        </inertial>
+    </xacro:macro>
+
+    <!-- PROPELLER LINK -->
+    <xacro:macro name="propeller_link" params="pref suff">
+        <link name="${pref}_propeller_${suff}">
+            <visual>
+                <geometry>
+                    <cylinder radius="${propeller_rad}" length="${propeller_ht}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <material name="red"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder radius="${propeller_rad}" length="${propeller_ht}"/>
+                </geometry>
+            </collision>
+            <xacro:cyl_inertia mass="${propeller_mass}" rad="${propeller_rad}" ht="${propeller_ht}"/>
+        </link>
+    </xacro:macro>
+
+    <!-- STAND LINK -->
+    <xacro:macro name="stand_link" params="num">
+        <link name="stand_${num}">
+            <visual>
+                <geometry>
+                    <cylinder radius="${stand_rad}" length="${stand_ht}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <material name="white"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder radius="${stand_rad}" length="${stand_ht}"/>
+                </geometry>
+            </collision>
+            <xacro:cyl_inertia mass="${stand_mass}" rad="${stand_rad}" ht="${stand_ht}"/>
+        </link>
+    </xacro:macro>
+</robot>
