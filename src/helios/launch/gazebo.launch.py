@@ -35,7 +35,8 @@ def generate_launch_description():
 
     # Start Ignition Gazebo
     start_ign_gazebo = ExecuteProcess(
-        cmd=['ign', 'gazebo', '-r', 'empty.sdf'],
+        cmd=['ign', 'gazebo', '-r', '/home/redpaladin/helios_ws/src/helios/worlds/collapsed_industrial/collapsed_industrial.sdf'],
+        #cmd=['ign', 'gazebo', '-r', 'empty.sdf'],
         output='screen'
     )
 
@@ -56,7 +57,10 @@ def generate_launch_description():
         arguments=[
             '-file', urdf_temp_file_path,
             '-name', 'helios',
-            '-allow_renaming', 'true'
+            '-allow_renaming', 'true',
+            '-x', '10',  # Move far from (0, 0)
+            '-y', '-10', # Move to a clearer space
+            '-z', '2'    # Ensure it's above the ground
         ],
         output='screen'
     )
