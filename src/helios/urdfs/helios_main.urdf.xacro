@@ -142,7 +142,7 @@
     <joint name="camera_joint" type="fixed">
         <parent link="base_link"/>
         <child link="camera_link"/>
-        <origin xyz="0.0 0.0 0.025" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.0 0.0 0.030" rpy="0.0 0.0 0.0"/>
     </joint>
 
     <joint name="lidar_joint" type="fixed">
@@ -150,7 +150,7 @@
         <child link="lidar_link"/>
         <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
     </joint>
-
+    
     <!-- Gazebo Sensor Plugins -->
     <gazebo reference="camera_link">
         <plugin
@@ -207,5 +207,5 @@
           </sensor>
         </plugin>
     </gazebo>
-    
+
 </robot>

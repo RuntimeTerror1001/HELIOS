@@ -44,8 +44,12 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
-            '/camera/image_raw@sensor_msgs/msg/Image@ignition.msgs.Image',
-            '/lidar/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan'
+            '/world/collapsed_industrial/model/HELIOS/model/HELIOS/link/base_link/sensor/camera_front/image@sensor_msgs/msg/Image@ignition.msgs.Image',
+            '/world/collapsed_industrial/model/HELIOS/model/HELIOS/link/base_link/sensor/front_laser/scan@sensor_msgs/msg/LaserScan@ignition.msgs.LaserScan'
+        ],
+        remappings=[
+            ('/world/collapsed_industrial/model/HELIOS/model/HELIOS/link/base_link/sensor/camera_front/image', '/camera/image_raw'),
+            ('/world/collapsed_industrial/model/HELIOS/model/HELIOS/link/base_link/sensor/front_laser/scan', '/lidar/scan')
         ],
         output='screen'
     )
@@ -60,7 +64,10 @@ def generate_launch_description():
             '-allow_renaming', 'true',
             '-x', '10',  # Move far from (0, 0)
             '-y', '-10', # Move to a clearer space
-            '-z', '2'    # Ensure it's above the ground
+            '-z', '5',    # Ensure it's above the ground
+            '-R', '0', 
+            '-P', '0', 
+            '-Y', '-0.916'
         ],
         output='screen'
     )
@@ -75,10 +82,52 @@ def generate_launch_description():
         output='screen'
     )
 
+    helios_tf_publisher = Node(
+        package='helios',
+        executable='helios_tf_publisher',
+        output='screen'
+    )
+
+    # Cartographer node
+    cartographer_node = Node(
+        package='cartographer_ros',
+        executable='cartographer_node',
+        name='cartographer_node',
+        output='screen',
+        parameters=[{
+            'use_sim_time': True  # Enable simulation time
+            #'cartographer_ros_config': '/home/redpaladin/helios_ws/src/helios/config/cartographer_config.lua'  # Path to your cartographer config file
+        }],
+        remappings=[
+            ('/scan', '/lidar/scan'),  # Remap LiDAR topic
+            ('/tf', '/tf'),
+            ('/tf_static', '/tf_static')
+        ],
+        arguments=[
+            '--configuration_directory', '/home/redpaladin/helios_ws/src/helios/config',  # Path to your Cartographer config
+            '--configuration_basename', 'cartographer_config.lua'  # Lua config file name
+        ]
+    )
+
+    # Cartographer's Trajectory Publisher Node (to publish the map)
+    #trajectory_publisher_node = Node(
+    #    package='cartographer_ros',
+    #    executable='cartographer_trajectory_upload_node',
+    #    name='cartographer_trajectory_upload_node',
+    #    output='screen',
+    #    parameters=[{
+    #        'use_sim_time': True,
+    #    }],
+    #)
+
     return LaunchDescription([
-        xacro_arg,
+        #xacro_arg,
         start_ign_gazebo,
-        spawn_entity,
-        robot_state_publisher,
+        #spawn_entity,
+        #robot_state_publisher,
+        helios_tf_publisher,
+        cartographer_node,
+        #trajectory_publisher_node,
+        rrt_node,
         ros_gz_bridge
     ])

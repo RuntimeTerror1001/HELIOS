@@ -1,0 +1,38 @@
+running develop
+/home/redpaladin/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  easy_install.initialize_options(self)
+Removing /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios.egg-link (link to .)
+running egg_info
+writing ../../build/helios/helios.egg-info/PKG-INFO
+writing dependency_links to ../../build/helios/helios.egg-info/dependency_links.txt
+writing requirements to ../../build/helios/helios.egg-info/requires.txt
+writing top-level names to ../../build/helios/helios.egg-info/top_level.txt
+reading manifest file '../../build/helios/helios.egg-info/SOURCES.txt'
+writing manifest file '../../build/helios/helios.egg-info/SOURCES.txt'
+running build
+running build_py
+copying helios/__init__.py -> /home/redpaladin/helios_ws/build/helios/build/lib/helios
+running install
+running install_lib
+creating /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios
+copying /home/redpaladin/helios_ws/build/helios/build/lib/helios/__init__.py -> /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios
+byte-compiling /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/helios -> /home/redpaladin/helios_ws/install/helios/share/ament_index/resource_index/packages
+copying package.xml -> /home/redpaladin/helios_ws/install/helios/share/helios
+copying launch/gazebo.launch.py -> /home/redpaladin/helios_ws/install/helios/share/helios/launch
+running install_egg_info
+Copying ../../build/helios/helios.egg-info to /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/redpaladin/helios_ws/build/helios/install.log'

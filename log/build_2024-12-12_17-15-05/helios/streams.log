@@ -1,0 +1,31 @@
+[0.700s] Invoking command in '/home/redpaladin/helios_ws/build/helios': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/redpaladin/helios_ws/build/helios/build --no-deps symlink_data --force
+[0.866s] running develop
+[0.867s] /home/redpaladin/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.867s] !!
+[0.867s] 
+[0.867s]         ********************************************************************************
+[0.867s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.867s]         Instead, use pypa/build, pypa/installer or other
+[0.867s]         standards-based tools.
+[0.867s] 
+[0.867s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.867s]         ********************************************************************************
+[0.867s] 
+[0.867s] !!
+[0.868s]   easy_install.initialize_options(self)
+[0.967s] running egg_info
+[0.974s] writing helios.egg-info/PKG-INFO
+[0.974s] writing dependency_links to helios.egg-info/dependency_links.txt
+[0.975s] writing requirements to helios.egg-info/requires.txt
+[0.975s] writing top-level names to helios.egg-info/top_level.txt
+[0.989s] reading manifest file 'helios.egg-info/SOURCES.txt'
+[0.990s] writing manifest file 'helios.egg-info/SOURCES.txt'
+[0.997s] running build_ext
+[0.998s] Creating /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios.egg-link (link to .)
+[0.998s] 
+[0.998s] Installed /home/redpaladin/helios_ws/build/helios
+[0.998s] running symlink_data
+[0.998s] symbolically linking /home/redpaladin/helios_ws/build/helios/resource/helios -> /home/redpaladin/helios_ws/install/helios/share/ament_index/resource_index/packages
+[0.999s] symbolically linking /home/redpaladin/helios_ws/build/helios/package.xml -> /home/redpaladin/helios_ws/install/helios/share/helios
+[0.999s] symbolically linking /home/redpaladin/helios_ws/build/helios/launch/gazebo.launch.py -> /home/redpaladin/helios_ws/install/helios/share/helios/launch
+[1.018s] Invoked command in '/home/redpaladin/helios_ws/build/helios' returned '0': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/redpaladin/helios_ws/build/helios/build --no-deps symlink_data --force

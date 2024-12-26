@@ -22,6 +22,7 @@ setup(
     license='TODO: License declaration',
     entry_points={
         'console_scripts': [
+            'helios_tf_publisher = helios.helios_tf_publisher:main',
         ],
     },
 )

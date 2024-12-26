@@ -1,0 +1,25 @@
+
+<?xml version='1.0' ?>
+<sdf version='1.6'>
+  <model name='Survivor_Male'>
+    <static>true</static>
+    <link name='link'>
+      <pose>0 0 -0.837 0 0 0</pose>
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>file:///home/redpaladin/helios_ws/src/helios/models/Survivor_Male/meshes/Survivor_Male.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>file:///home/redpaladin/helios_ws/src/helios/models/Survivor_Male/meshes/Survivor_Male.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+
