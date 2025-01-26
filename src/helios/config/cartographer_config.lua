@@ -1,5 +1,5 @@
 -- Cartographer configuration file
-include "/opt/ros/humble/share/cartographer/configuration_files/map_builder.lua"
+include "/home/redpaladin/helios_ws/src/helios/config/map_builder.lua"
 
 MAP_BUILDER.use_trajectory_builder_2d = false  -- Use 3D SLAM
 MAP_BUILDER.use_trajectory_builder_3d = true   -- Enable 3D SLAM

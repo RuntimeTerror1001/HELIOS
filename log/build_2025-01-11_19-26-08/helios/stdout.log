@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing helios.egg-info/PKG-INFO
+writing dependency_links to helios.egg-info/dependency_links.txt
+writing entry points to helios.egg-info/entry_points.txt
+writing requirements to helios.egg-info/requires.txt
+writing top-level names to helios.egg-info/top_level.txt
+reading manifest file 'helios.egg-info/SOURCES.txt'
+writing manifest file 'helios.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios.egg-link (link to .)
+Installing helios_tf_publisher script to /home/redpaladin/helios_ws/install/helios/lib/helios
+
+Installed /home/redpaladin/helios_ws/build/helios
+running symlink_data
+symbolically linking /home/redpaladin/helios_ws/build/helios/resource/helios -> /home/redpaladin/helios_ws/install/helios/share/ament_index/resource_index/packages
+symbolically linking /home/redpaladin/helios_ws/build/helios/package.xml -> /home/redpaladin/helios_ws/install/helios/share/helios
+symbolically linking /home/redpaladin/helios_ws/build/helios/launch/gazebo.launch.py -> /home/redpaladin/helios_ws/install/helios/share/helios/launch

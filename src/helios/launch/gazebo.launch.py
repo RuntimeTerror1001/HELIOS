@@ -104,7 +104,7 @@ def generate_launch_description():
             ('/tf_static', '/tf_static')
         ],
         arguments=[
-            '--configuration_directory', '/home/redpaladin/helios_ws/src/helios/config',  # Path to your Cartographer config
+            '--configuration_directory', '/home/redpaladin/helios_ws/src/helios/config/',  # Path to your Cartographer config
             '--configuration_basename', 'cartographer_config.lua'  # Lua config file name
         ]
     )
@@ -128,6 +128,5 @@ def generate_launch_description():
         helios_tf_publisher,
         cartographer_node,
         #trajectory_publisher_node,
-        rrt_node,
         ros_gz_bridge
     ])
