@@ -1,0 +1,31 @@
+running develop
+Removing /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios.egg-link (link to .)
+running egg_info
+writing ../../build/helios/helios.egg-info/PKG-INFO
+writing dependency_links to ../../build/helios/helios.egg-info/dependency_links.txt
+writing entry points to ../../build/helios/helios.egg-info/entry_points.txt
+writing requirements to ../../build/helios/helios.egg-info/requires.txt
+writing top-level names to ../../build/helios/helios.egg-info/top_level.txt
+reading manifest file '../../build/helios/helios.egg-info/SOURCES.txt'
+writing manifest file '../../build/helios/helios.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios
+copying /home/redpaladin/Projects/helios_ws/build/helios/build/lib/helios/__init__.py -> /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios
+copying /home/redpaladin/Projects/helios_ws/build/helios/build/lib/helios/helios_tf_publisher.py -> /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios
+copying /home/redpaladin/Projects/helios_ws/build/helios/build/lib/helios/keyboard_control.py -> /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios
+byte-compiling /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/helios_tf_publisher.py to helios_tf_publisher.cpython-310.pyc
+byte-compiling /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/keyboard_control.py to keyboard_control.cpython-310.pyc
+running install_data
+copying resource/helios -> /home/redpaladin/Projects/helios_ws/install/helios/share/ament_index/resource_index/packages
+copying package.xml -> /home/redpaladin/Projects/helios_ws/install/helios/share/helios
+copying launch/gazebo.launch.py -> /home/redpaladin/Projects/helios_ws/install/helios/share/helios/launch
+running install_egg_info
+Copying ../../build/helios/helios.egg-info to /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info
+running install_scripts
+Installing helios_tf_publisher script to /home/redpaladin/Projects/helios_ws/install/helios/lib/helios
+Installing keyboard_control script to /home/redpaladin/Projects/helios_ws/install/helios/lib/helios
+writing list of installed files to '/home/redpaladin/Projects/helios_ws/build/helios/install.log'

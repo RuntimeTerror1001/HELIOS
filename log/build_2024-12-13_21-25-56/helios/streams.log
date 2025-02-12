@@ -1,4 +1,4 @@
-[0.548s] Invoking command in '/home/redpaladin/helios_ws/src/helios': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/helios_ws/build/helios/build install --record /home/redpaladin/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[0.548s] Invoking command in '/home/redpaladin/Projects/helios_ws/src/helios': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data
 [0.674s] running egg_info
 [0.681s] writing ../../build/helios/helios.egg-info/PKG-INFO
 [0.682s] writing dependency_links to ../../build/helios/helios.egg-info/dependency_links.txt
@@ -9,18 +9,18 @@
 [0.700s] writing manifest file '../../build/helios/helios.egg-info/SOURCES.txt'
 [0.700s] running build
 [0.700s] running build_py
-[0.700s] copying helios/helios_tf_publisher.py -> /home/redpaladin/helios_ws/build/helios/build/lib/helios
-[0.701s] copying helios/__init__.py -> /home/redpaladin/helios_ws/build/helios/build/lib/helios
+[0.700s] copying helios/helios_tf_publisher.py -> /home/redpaladin/Projects/helios_ws/build/helios/build/lib/helios
+[0.701s] copying helios/__init__.py -> /home/redpaladin/Projects/helios_ws/build/helios/build/lib/helios
 [0.701s] running install
 [0.704s] running install_lib
 [0.711s] running install_data
-[0.712s] copying resource/helios -> /home/redpaladin/helios_ws/install/helios/share/ament_index/resource_index/packages
-[0.712s] copying package.xml -> /home/redpaladin/helios_ws/install/helios/share/helios
-[0.712s] copying launch/gazebo.launch.py -> /home/redpaladin/helios_ws/install/helios/share/helios/launch
+[0.712s] copying resource/helios -> /home/redpaladin/Projects/helios_ws/install/helios/share/ament_index/resource_index/packages
+[0.712s] copying package.xml -> /home/redpaladin/Projects/helios_ws/install/helios/share/helios
+[0.712s] copying launch/gazebo.launch.py -> /home/redpaladin/Projects/helios_ws/install/helios/share/helios/launch
 [0.712s] running install_egg_info
-[0.721s] removing '/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info' (and everything under it)
-[0.722s] Copying ../../build/helios/helios.egg-info to /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info
+[0.721s] removing '/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info' (and everything under it)
+[0.722s] Copying ../../build/helios/helios.egg-info to /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info
 [0.722s] running install_scripts
-[0.790s] Installing helios_tf_publisher script to /home/redpaladin/helios_ws/install/helios/lib/helios
-[0.790s] writing list of installed files to '/home/redpaladin/helios_ws/build/helios/install.log'
-[0.807s] Invoked command in '/home/redpaladin/helios_ws/src/helios' returned '0': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/helios_ws/build/helios/build install --record /home/redpaladin/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[0.790s] Installing helios_tf_publisher script to /home/redpaladin/Projects/helios_ws/install/helios/lib/helios
+[0.790s] writing list of installed files to '/home/redpaladin/Projects/helios_ws/build/helios/install.log'
+[0.807s] Invoked command in '/home/redpaladin/Projects/helios_ws/src/helios' returned '0': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data

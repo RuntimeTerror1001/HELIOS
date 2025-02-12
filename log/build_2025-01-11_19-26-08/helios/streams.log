@@ -1,4 +1,4 @@
-[1.173s] Invoking command in '/home/redpaladin/helios_ws/build/helios': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/redpaladin/helios_ws/build/helios/build --no-deps symlink_data --force
+[1.173s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/helios': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/redpaladin/Projects/helios_ws/build/helios/build --no-deps symlink_data --force
 [1.490s] running develop
 [1.491s] /home/redpaladin/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
 [1.491s] !!
@@ -22,12 +22,12 @@
 [1.769s] reading manifest file 'helios.egg-info/SOURCES.txt'
 [1.771s] writing manifest file 'helios.egg-info/SOURCES.txt'
 [1.786s] running build_ext
-[1.787s] Creating /home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages/helios.egg-link (link to .)
-[1.788s] Installing helios_tf_publisher script to /home/redpaladin/helios_ws/install/helios/lib/helios
+[1.787s] Creating /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios.egg-link (link to .)
+[1.788s] Installing helios_tf_publisher script to /home/redpaladin/Projects/helios_ws/install/helios/lib/helios
 [1.788s] 
-[1.788s] Installed /home/redpaladin/helios_ws/build/helios
+[1.788s] Installed /home/redpaladin/Projects/helios_ws/build/helios
 [1.789s] running symlink_data
-[1.789s] symbolically linking /home/redpaladin/helios_ws/build/helios/resource/helios -> /home/redpaladin/helios_ws/install/helios/share/ament_index/resource_index/packages
-[1.790s] symbolically linking /home/redpaladin/helios_ws/build/helios/package.xml -> /home/redpaladin/helios_ws/install/helios/share/helios
-[1.791s] symbolically linking /home/redpaladin/helios_ws/build/helios/launch/gazebo.launch.py -> /home/redpaladin/helios_ws/install/helios/share/helios/launch
-[1.824s] Invoked command in '/home/redpaladin/helios_ws/build/helios' returned '0': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/redpaladin/helios_ws/build/helios/build --no-deps symlink_data --force
+[1.789s] symbolically linking /home/redpaladin/Projects/helios_ws/build/helios/resource/helios -> /home/redpaladin/Projects/helios_ws/install/helios/share/ament_index/resource_index/packages
+[1.790s] symbolically linking /home/redpaladin/Projects/helios_ws/build/helios/package.xml -> /home/redpaladin/Projects/helios_ws/install/helios/share/helios
+[1.791s] symbolically linking /home/redpaladin/Projects/helios_ws/build/helios/launch/gazebo.launch.py -> /home/redpaladin/Projects/helios_ws/install/helios/share/helios/launch
+[1.824s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/helios' returned '0': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/redpaladin/Projects/helios_ws/build/helios/build --no-deps symlink_data --force

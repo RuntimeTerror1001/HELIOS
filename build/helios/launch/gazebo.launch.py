@@ -1,1 +1,1 @@
-/home/redpaladin/helios_ws/src/helios/launch/gazebo.launch.py
+/home/redpaladin/Projects/helios_ws/src/helios/launch/gazebo.launch.py

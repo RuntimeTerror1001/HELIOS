@@ -6,7 +6,7 @@
 [21.902s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
 [21.902s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
 [21.902s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
-[21.902s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/redpaladin/helios_ws'
+[21.902s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/redpaladin/Projects/helios_ws'
 [21.903s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
 [21.903s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
 [21.903s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
@@ -61,7 +61,7 @@
 [21.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
 [0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
 [0.836s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
-[0.859s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/redpaladin/helios_ws/install
+[0.859s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/redpaladin/Projects/helios_ws/install
 [0.861s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/redpaladin/robot_task_ws/install
 [0.863s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/redpaladin/ros2_ws_test/install
 [0.866s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 307 installed packages in /opt/ros/humble
@@ -75,40 +75,40 @@
 [1.009s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'ament_cmake_args' from command line to 'None'
 [1.009s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'catkin_cmake_args' from command line to 'None'
 [1.010s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'catkin_skip_building_tests' from command line to 'False'
-[1.010s] DEBUG:colcon.colcon_core.verb:Building package 'helios' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/helios_ws/build/helios', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/helios_ws/install/helios', 'merge_install': False, 'path': '/home/redpaladin/helios_ws/src/helios', 'symlink_install': False, 'test_result_base': None}
+[1.010s] DEBUG:colcon.colcon_core.verb:Building package 'helios' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/helios', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/helios', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/helios', 'symlink_install': False, 'test_result_base': None}
 [1.010s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
 [1.013s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
-[1.014s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/redpaladin/helios_ws/src/helios' with build type 'ament_python'
+[1.014s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/helios' with build type 'ament_python'
 [1.015s] Level 1:colcon.colcon_core.shell:create_environment_hook('helios', 'ament_prefix_path')
 [1.026s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
-[1.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/helios_ws/install/helios/share/helios/hook/ament_prefix_path.ps1'
-[1.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/helios_ws/install/helios/share/helios/hook/ament_prefix_path.dsv'
-[1.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/helios_ws/install/helios/share/helios/hook/ament_prefix_path.sh'
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.ps1'
+[1.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.dsv'
+[1.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.sh'
 [1.035s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [1.035s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[1.426s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/redpaladin/helios_ws/src/helios'
+[1.426s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/redpaladin/Projects/helios_ws/src/helios'
 [1.427s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [1.427s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[3.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/helios_ws/src/helios': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/helios_ws/build/helios/build install --record /home/redpaladin/helios_ws/build/helios/install.log --single-version-externally-managed install_data
-[3.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/helios_ws/src/helios' returned '0': PYTHONPATH=/home/redpaladin/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/helios_ws/build/helios/build install --record /home/redpaladin/helios_ws/build/helios/install.log --single-version-externally-managed install_data
-[3.958s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/helios_ws/install/helios' for CMake module files
-[3.959s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/helios_ws/install/helios' for CMake config files
-[3.962s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/helios_ws/install/helios/lib'
-[3.962s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/helios_ws/install/helios/bin'
-[3.962s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/helios_ws/install/helios/lib/pkgconfig/helios.pc'
-[3.963s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/helios_ws/install/helios/lib/python3.10/site-packages'
+[3.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/src/helios': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[3.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/src/helios' returned '0': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/home/redpaladin/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[3.958s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios' for CMake module files
+[3.959s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios' for CMake config files
+[3.962s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib'
+[3.962s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/bin'
+[3.962s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib/pkgconfig/helios.pc'
+[3.963s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages'
 [3.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('helios', 'pythonpath')
-[3.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/helios_ws/install/helios/share/helios/hook/pythonpath.ps1'
-[3.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/helios_ws/install/helios/share/helios/hook/pythonpath.dsv'
-[3.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/helios_ws/install/helios/share/helios/hook/pythonpath.sh'
-[3.967s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/helios_ws/install/helios/bin'
+[3.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.ps1'
+[3.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.dsv'
+[3.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.sh'
+[3.967s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/bin'
 [3.967s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(helios)
-[3.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/helios_ws/install/helios/share/helios/package.ps1'
-[3.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/helios_ws/install/helios/share/helios/package.dsv'
-[3.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/helios_ws/install/helios/share/helios/package.sh'
-[3.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/helios_ws/install/helios/share/helios/package.bash'
-[3.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/helios_ws/install/helios/share/helios/package.zsh'
-[3.976s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/helios_ws/install/helios/share/colcon-core/packages/helios)
+[3.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.ps1'
+[3.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.dsv'
+[3.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.sh'
+[3.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.bash'
+[3.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.zsh'
+[3.976s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/helios/share/colcon-core/packages/helios)
 [3.978s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
 [3.979s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
 [3.979s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
@@ -119,13 +119,13 @@
 [4.079s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
 [4.093s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
 [4.093s] DEBUG:colcon.colcon_core.event_reactor:joined thread
-[4.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/helios_ws/install/local_setup.ps1'
-[4.096s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/helios_ws/install/_local_setup_util_ps1.py'
-[4.099s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/helios_ws/install/setup.ps1'
-[4.101s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/helios_ws/install/local_setup.sh'
-[4.103s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/helios_ws/install/_local_setup_util_sh.py'
-[4.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/helios_ws/install/setup.sh'
-[4.107s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/helios_ws/install/local_setup.bash'
-[4.109s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/helios_ws/install/setup.bash'
-[4.111s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/helios_ws/install/local_setup.zsh'
-[4.114s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/helios_ws/install/setup.zsh'
+[4.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.ps1'
+[4.096s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/Projects/helios_ws/install/_local_setup_util_ps1.py'
+[4.099s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.ps1'
+[4.101s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.sh'
+[4.103s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/Projects/helios_ws/install/_local_setup_util_sh.py'
+[4.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.sh'
+[4.107s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.bash'
+[4.109s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.bash'
+[4.111s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.zsh'
+[4.114s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.zsh'
