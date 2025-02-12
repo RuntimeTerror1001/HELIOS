@@ -330,21 +330,21 @@
             <pose>0 3 0 0 0 0</pose> <!-- Adjust position as needed -->
             <scale>10 10 10</scale>
             <include>
-                <uri>file:///home/redpaladin/helios_ws/src/helios/worlds/collapsed_industrial/model.sdf</uri>
+                <uri>file:///home/redpaladin/Projects/helios_ws/src/helios/worlds/collapsed_industrial/model.sdf</uri>
             </include>
         </model>
 
         <model name="Survivor_Male">
             <pose>8 8 7.5 0 0 0</pose>
             <include>
-                <uri>file:///home/redpaladin/helios_ws/src/helios/models/Survivor_Male/model.sdf</uri>
+                <uri>file:///home/redpaladin/Projects/helios_ws/src/helios/models/Survivor_Male/model.sdf</uri>
             </include>
         </model>
 
         <model name="HELIOS">
             <pose>10 -10 0 0 0 1.832</pose>
             <include>
-                <uri>file:////home/redpaladin/helios_ws/src/helios/models/HELIOS/model.sdf</uri>
+                <uri>file:////home/redpaladin/Projects/helios_ws/src/helios/models/HELIOS/model.sdf</uri>
             </include>
         </model>
 

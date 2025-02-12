@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'helios_tf_publisher = helios.helios_tf_publisher:main',
+            'keyboard_control = helios.keyboard_control:main'
         ],
     },
 )
