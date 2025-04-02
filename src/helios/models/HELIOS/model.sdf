@@ -3,12 +3,13 @@
     <model name="HELIOS">
         <pose>0 0 0.121078 0 0 0</pose>
 
+        <!--
         <plugin
             filename="ignition-gazebo-joint-state-publisher-system"
             name="ignition::gazebo::systems::JointStatePublisher">
-            <publish_rate>30</publish_rate> <!-- Adjust rate as needed -->
+            <publish_rate>30</publish_rate> 
         </plugin>
-
+        -->
 
         <!--Base Link-->
         <link name="base_link">
@@ -426,6 +427,25 @@
                 <use_parent_model_frame>1</use_parent_model_frame>
             </axis>
         </joint>
+        <!-- <plugin
+            filename="ignition-gazebo-multicopter-motor-model-system"
+            name="gz::sim::systems::MulticopterMotorModel">
+            <jointName>HELIOS/rotor_0_joint</jointName>
+            <linkName>HELIOS/rotor_0</linkName>
+            <turningDirection>ccw</turningDirection>
+            <timeConstantUp>0.0125</timeConstantUp>
+            <timeConstantDown>0.025</timeConstantDown>
+            <maxRotVelocity>800.0</maxRotVelocity>
+            <motorConstant>8.54858e-06</motorConstant>
+            <momentConstant>0.016</momentConstant>
+            <commandSubTopic>/HELIOS/rotor_0_cmd</commandSubTopic>
+            <motorNumber>0</motorNumber>
+            <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+            <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+            <motorSpeedPubTopic>motor_speed/0</motorSpeedPubTopic>
+            <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+            <motorType>velocity</motorType>
+        </plugin> -->
 
         <link name="rotor_1"> <!--Back Left-->
             <pose frame="">-0.2263 0.2263 0.038 0 0 0</pose>
@@ -494,6 +514,25 @@
                 <use_parent_model_frame>1</use_parent_model_frame>
             </axis>
         </joint>
+        <!--<plugin
+            filename="ignition-gazebo-multicopter-motor-model-system"
+            name="gz::sim::systems::MulticopterMotorModel">
+            <jointName>HELIOS/rotor_1_joint</jointName>
+            <linkName>HELIOS/rotor_1</linkName>
+            <turningDirection>ccw</turningDirection>
+            <timeConstantUp>0.0125</timeConstantUp>
+            <timeConstantDown>0.025</timeConstantDown>
+            <maxRotVelocity>800.0</maxRotVelocity>
+            <motorConstant>8.54858e-06</motorConstant>
+            <momentConstant>0.016</momentConstant>
+            <commandSubTopic>/HELIOS/rotor_1_cmd</commandSubTopic>
+            <motorNumber>1</motorNumber>
+            <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+            <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+            <motorSpeedPubTopic>motor_speed/1</motorSpeedPubTopic>
+            <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+            <motorType>velocity</motorType>
+      </plugin>-->
 
         <link name="rotor_2"> <!--Front Left-->
             <pose frame="">0.2263 0.2263 0.038 0 0 0</pose>
@@ -562,6 +601,25 @@
                 <use_parent_model_frame>1</use_parent_model_frame>
             </axis>
         </joint>
+        <!--<plugin
+            filename="ignition-gazebo-multicopter-motor-model-system"
+            name="gz::sim::systems::MulticopterMotorModel">
+            <jointName>HELIOS/rotor_2_joint</jointName>
+            <linkName>HELIOS/rotor_2</linkName>
+            <turningDirection>ccw</turningDirection>
+            <timeConstantUp>0.0125</timeConstantUp>
+            <timeConstantDown>0.025</timeConstantDown>
+            <maxRotVelocity>800.0</maxRotVelocity>
+            <motorConstant>8.54858e-06</motorConstant>
+            <momentConstant>0.016</momentConstant>
+            <commandSubTopic>/HELIOS/rotor_2_cmd</commandSubTopic>
+            <motorNumber>2</motorNumber>
+            <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+            <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+            <motorSpeedPubTopic>motor_speed/2</motorSpeedPubTopic>
+            <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+            <motorType>velocity</motorType>
+      </plugin>-->
 
         <link name="rotor_3"> <!--Back Right-->
             <pose frame="">-0.2263 -0.2263 0.038 0 0 0</pose>
@@ -630,5 +688,24 @@
                 <use_parent_model_frame>1</use_parent_model_frame>
             </axis>
         </joint>
+        <!--<plugin
+            filename="ignition-gazebo-multicopter-motor-model-system"
+            name="gz::sim::systems::MulticopterMotorModel">
+            <jointName>HELIOS/rotor_3_joint</jointName>
+            <linkName>HELIOS/rotor_3</linkName>
+            <turningDirection>ccw</turningDirection>
+            <timeConstantUp>0.0125</timeConstantUp>
+            <timeConstantDown>0.025</timeConstantDown>
+            <maxRotVelocity>800.0</maxRotVelocity>
+            <motorConstant>8.54858e-06</motorConstant>
+            <momentConstant>0.016</momentConstant>
+            <commandSubTopic>/HELIOS/rotor_3_cmd</commandSubTopic>
+            <motorNumber>3</motorNumber>
+            <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+            <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+            <motorSpeedPubTopic>motor_speed/3</motorSpeedPubTopic>
+            <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+            <motorType>velocity</motorType>
+      </plugin>-->
     </model>
 </sdf>

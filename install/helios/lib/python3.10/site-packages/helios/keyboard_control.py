@@ -77,7 +77,7 @@ class KeyboardControl(Node):
         request.effort = effort
         request.start_time.sec = 0
         request.start_time.nanosec = 0
-        request.duration.sec = 1
+        request.duration.sec = 0
         request.duration.nanosec = 0
         self.client.call_async(request)
     
