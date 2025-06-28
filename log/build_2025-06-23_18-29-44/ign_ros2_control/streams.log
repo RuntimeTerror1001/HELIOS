@@ -1,0 +1,39 @@
+[0.006s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control
+[0.042s] -- The C compiler identification is GNU 11.4.0
+[0.076s] -- The CXX compiler identification is GNU 11.4.0
+[0.082s] -- Detecting C compiler ABI info
+[0.128s] -- Detecting C compiler ABI info - done
+[0.132s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.132s] -- Detecting C compile features
+[0.132s] -- Detecting C compile features - done
+[0.134s] -- Detecting CXX compiler ABI info
+[0.202s] -- Detecting CXX compiler ABI info - done
+[0.206s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.206s] -- Detecting CXX compile features
+[0.206s] -- Detecting CXX compile features - done
+[0.209s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.414s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.509s] -- Configuring done
+[0.511s] -- Generating done
+[0.512s] -- Build files have been written to: /home/redpaladin/Projects/helios_ws/build/ign_ros2_control
+[0.515s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control
+[0.516s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control -- -j24 -l24
+[0.540s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control -- -j24 -l24
+[0.541s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control
+[0.545s] -- Install configuration: ""
+[0.545s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ament_index/resource_index/package_run_dependencies/ign_ros2_control
+[0.545s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ament_index/resource_index/parent_prefix_path/ign_ros2_control
+[0.545s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.sh
+[0.545s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.dsv
+[0.545s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/path.sh
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/path.dsv
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.bash
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.sh
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.zsh
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.dsv
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.dsv
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ament_index/resource_index/packages/ign_ros2_control
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig.cmake
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig-version.cmake
+[0.546s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.xml
+[0.548s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control

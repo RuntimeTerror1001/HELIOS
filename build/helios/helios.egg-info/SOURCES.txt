@@ -10,6 +10,7 @@ setup.py
 ../../build/helios/helios.egg-info/zip-safe
 helios/__init__.py
 helios/helios_tf_publisher.py
+helios/helios_tf_publisher_updated.py
 helios/keyboard_control.py
 launch/helios.launch.py
 resource/helios

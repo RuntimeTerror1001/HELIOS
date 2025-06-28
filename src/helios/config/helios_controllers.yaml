@@ -1,0 +1,18 @@
+controller_manager:
+  ros__parameters:
+
+    update_rate: 500  # faster is better for drones
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    rotor_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+rotor_controller:
+  ros__parameters:
+    joints:
+      - rotor_0_joint
+      - rotor_1_joint
+      - rotor_2_joint
+      - rotor_3_joint

@@ -1,0 +1,280 @@
+[0.056s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.057s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7cfd94063ee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cfd940637c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cfd940637c0>>, mixin_verb=('build',))
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.076s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/redpaladin/Projects/helios_ws'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.076s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.084s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['ignore', 'ignore_ament_install']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'ignore'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'ignore_ament_install'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['colcon_pkg']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'colcon_pkg'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['colcon_meta']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'colcon_meta'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['ros']
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'ros'
+[0.086s] DEBUG:colcon.colcon_core.package_identification:Package 'src/helios' with type 'ros.ament_python' and name 'helios'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.087s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.088s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.099s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.099s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/redpaladin/Projects/helios_ws/install/px4_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.099s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/redpaladin/Projects/helios_ws/install/helios' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.099s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.099s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/redpaladin/Projects/helios_ws/install/px4_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.099s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/redpaladin/Projects/helios_ws/install
+[0.100s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/humble
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_target' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_clean_cache' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_clean_first' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_force_configure' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'ament_cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'catkin_cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.120s] DEBUG:colcon.colcon_core.verb:Building package 'helios' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/helios', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/helios', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/helios', 'symlink_install': False, 'test_result_base': None}
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.120s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/px4_msgs', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.120s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.120s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/px4_ros_com', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.120s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.121s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.121s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/px4_msgs' with build type 'ament_cmake'
+[0.121s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/redpaladin/Projects/helios_ws/src/px4_msgs'
+[0.122s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.122s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.122s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.124s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/helios' with build type 'ament_python'
+[0.125s] Level 1:colcon.colcon_core.shell:create_environment_hook('helios', 'ament_prefix_path')
+[0.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.ps1'
+[0.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.dsv'
+[0.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.sh'
+[0.126s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.126s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/px4_msgs
+[0.230s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/redpaladin/Projects/helios_ws/src/helios'
+[0.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/src/helios': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/src/helios' returned '0': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios' for CMake module files
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios' for CMake config files
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib'
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/bin'
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib/pkgconfig/helios.pc'
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages'
+[0.772s] Level 1:colcon.colcon_core.shell:create_environment_hook('helios', 'pythonpath')
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.ps1'
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.dsv'
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.sh'
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/bin'
+[0.773s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(helios)
+[0.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.ps1'
+[0.774s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.dsv'
+[0.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.sh'
+[0.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.bash'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.zsh'
+[0.775s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/helios/share/colcon-core/packages/helios)
+[2.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/px4_msgs
+[2.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/px4_msgs -- -j24 -l24
+[89.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/px4_msgs -- -j24 -l24
+[89.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/px4_msgs
+[90.445s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[90.446s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs' for CMake module files
+[90.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/px4_msgs
+[90.446s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs' for CMake config files
+[90.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[90.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[90.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[90.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[90.448s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib'
+[90.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[90.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[90.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[90.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[90.448s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/bin'
+[90.448s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[90.448s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib/python3.10/site-packages'
+[90.449s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/bin'
+[90.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[90.449s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[90.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[90.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[90.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[90.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[90.450s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[90.450s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs' for CMake module files
+[90.450s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs' for CMake config files
+[90.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[90.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[90.451s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[90.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[90.451s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib'
+[90.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[90.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[90.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[90.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[90.452s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/bin'
+[90.452s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[90.452s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib/python3.10/site-packages'
+[90.452s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_msgs/bin'
+[90.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[90.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[90.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[90.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[90.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[90.458s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[90.458s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/px4_ros_com' with build type 'ament_cmake'
+[90.458s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/redpaladin/Projects/helios_ws/src/px4_ros_com'
+[90.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[90.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[90.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/px4_ros_com
+[91.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/px4_ros_com
+[91.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/px4_ros_com -- -j24 -l24
+[96.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/px4_ros_com -- -j24 -l24
+[96.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/px4_ros_com
+[96.518s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[96.518s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' for CMake module files
+[96.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/px4_ros_com
+[96.518s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' for CMake config files
+[96.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[96.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[96.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[96.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[96.519s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib'
+[96.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[96.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[96.520s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[96.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[96.520s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/bin'
+[96.520s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[96.520s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/python3.10/site-packages'
+[96.520s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/bin'
+[96.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[96.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[96.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.sh'
+[96.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.bash'
+[96.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[96.521s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[96.522s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[96.522s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' for CMake module files
+[96.522s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' for CMake config files
+[96.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[96.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[96.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[96.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[96.523s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib'
+[96.523s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[96.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[96.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[96.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[96.524s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/bin'
+[96.524s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[96.524s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/python3.10/site-packages'
+[96.524s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/bin'
+[96.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[96.524s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[96.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.sh'
+[96.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.bash'
+[96.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[96.525s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[96.525s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[96.525s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[96.525s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[96.525s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[96.528s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[96.528s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[96.528s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[96.535s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[96.535s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.ps1'
+[96.535s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/Projects/helios_ws/install/_local_setup_util_ps1.py'
+[96.536s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.ps1'
+[96.537s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.sh'
+[96.537s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/Projects/helios_ws/install/_local_setup_util_sh.py'
+[96.537s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.sh'
+[96.538s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.bash'
+[96.538s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.bash'
+[96.538s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.zsh'
+[96.539s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.zsh'

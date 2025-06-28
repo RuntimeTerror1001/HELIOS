@@ -1,0 +1,214 @@
+[0.006s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos
+[0.045s] -- The C compiler identification is GNU 11.4.0
+[0.078s] -- The CXX compiler identification is GNU 11.4.0
+[0.084s] -- Detecting C compiler ABI info
+[0.130s] -- Detecting C compiler ABI info - done
+[0.133s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.134s] -- Detecting C compile features
+[0.134s] -- Detecting C compile features - done
+[0.136s] -- Detecting CXX compiler ABI info
+[0.205s] -- Detecting CXX compiler ABI info - done
+[0.208s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.208s] -- Detecting CXX compile features
+[0.209s] -- Detecting CXX compile features - done
+[0.211s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.413s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.479s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.510s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.515s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.521s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.530s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.542s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.617s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.647s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.650s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.714s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.734s] -- Found FastRTPS: /usr/lib/x86_64-linux-gnu/cmake  
+[0.768s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.774s] -- Looking for pthread.h
+[0.820s] -- Looking for pthread.h - found
+[0.820s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.869s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.870s] -- Found Threads: TRUE  
+[0.894s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.905s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.959s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.960s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.960s] -- Configured cppcheck include dirs: 
+[0.960s] -- Configured cppcheck exclude dirs and/or files: 
+[0.962s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.962s] -- Configured cpplint exclude dirs and/or files: 
+[0.962s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.963s] -- Added test 'lint_cmake' to check CMake code style
+[0.964s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.965s] -- Added test 'uncrustify' to check C / C++ code style
+[0.965s] -- Configured uncrustify additional arguments: 
+[0.965s] -- Added test 'xmllint' to check XML markup files
+[0.966s] -- Configuring done
+[0.973s] [33mCMake Warning at CMakeLists.txt:32 (add_executable):
+[0.973s]   Cannot generate a safe runtime search path for target example_position
+[0.973s]   because files in some directories may conflict with libraries in implicit
+[0.974s]   directories:
+[0.974s] 
+[0.974s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[0.974s]       /opt/ros/humble/lib
+[0.974s] 
+[0.974s]   Some of these libraries may not be found correctly.
+[0.974s] 
+[0.974s] [0m
+[0.975s] [33mCMake Warning at CMakeLists.txt:40 (add_executable):
+[0.975s]   Cannot generate a safe runtime search path for target example_velocity
+[0.975s]   because files in some directories may conflict with libraries in implicit
+[0.975s]   directories:
+[0.975s] 
+[0.975s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[0.975s]       /opt/ros/humble/lib
+[0.975s] 
+[0.975s]   Some of these libraries may not be found correctly.
+[0.975s] 
+[0.975s] [0m
+[0.977s] [33mCMake Warning at CMakeLists.txt:48 (add_executable):
+[0.977s]   Cannot generate a safe runtime search path for target example_effort
+[0.977s]   because files in some directories may conflict with libraries in implicit
+[0.977s]   directories:
+[0.977s] 
+[0.977s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[0.977s]       /opt/ros/humble/lib
+[0.977s] 
+[0.977s]   Some of these libraries may not be found correctly.
+[0.977s] 
+[0.977s] [0m
+[0.978s] [33mCMake Warning at CMakeLists.txt:55 (add_executable):
+[0.978s]   Cannot generate a safe runtime search path for target example_diff_drive
+[0.978s]   because files in some directories may conflict with libraries in implicit
+[0.978s]   directories:
+[0.978s] 
+[0.978s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[0.978s]       /opt/ros/humble/lib
+[0.978s] 
+[0.978s]   Some of these libraries may not be found correctly.
+[0.979s] 
+[0.979s] [0m
+[0.980s] [33mCMake Warning at CMakeLists.txt:61 (add_executable):
+[0.980s]   Cannot generate a safe runtime search path for target
+[0.980s]   example_tricycle_drive because files in some directories may conflict with
+[0.980s]   libraries in implicit directories:
+[0.980s] 
+[0.980s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[0.980s]       /opt/ros/humble/lib
+[0.980s] 
+[0.980s]   Some of these libraries may not be found correctly.
+[0.980s] 
+[0.980s] [0m
+[0.981s] [33mCMake Warning at CMakeLists.txt:67 (add_executable):
+[0.981s]   Cannot generate a safe runtime search path for target
+[0.981s]   example_ackermann_drive because files in some directories may conflict with
+[0.981s]   libraries in implicit directories:
+[0.981s] 
+[0.981s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[0.981s]       /opt/ros/humble/lib
+[0.981s] 
+[0.981s]   Some of these libraries may not be found correctly.
+[0.981s] 
+[0.981s] [0m
+[0.982s] [33mCMake Warning at CMakeLists.txt:73 (add_executable):
+[0.982s]   Cannot generate a safe runtime search path for target example_gripper
+[0.982s]   because files in some directories may conflict with libraries in implicit
+[0.983s]   directories:
+[0.983s] 
+[0.983s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[0.983s]       /opt/ros/humble/lib
+[0.983s] 
+[0.983s]   Some of these libraries may not be found correctly.
+[0.983s] 
+[0.983s] [0m
+[0.983s] -- Generating done
+[0.990s] -- Build files have been written to: /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos
+[1.000s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos
+[1.001s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos -- -j24 -l24
+[1.034s] [ 14%] [32mBuilding CXX object CMakeFiles/example_effort.dir/examples/example_position.cpp.o[0m
+[1.034s] [ 14%] [32mBuilding CXX object CMakeFiles/example_position.dir/examples/example_position.cpp.o[0m
+[1.035s] [ 21%] [32mBuilding CXX object CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o[0m
+[1.035s] [ 28%] [32mBuilding CXX object CMakeFiles/example_velocity.dir/examples/example_position.cpp.o[0m
+[1.036s] [ 50%] [32mBuilding CXX object CMakeFiles/example_tricycle_drive.dir/examples/example_tricycle_drive.cpp.o[0m
+[1.036s] [ 50%] [32mBuilding CXX object CMakeFiles/example_ackermann_drive.dir/examples/example_ackermann_drive.cpp.o[0m
+[1.036s] [ 50%] [32mBuilding CXX object CMakeFiles/example_diff_drive.dir/examples/example_diff_drive.cpp.o[0m
+[3.579s] [ 57%] [32m[1mLinking CXX executable example_ackermann_drive[0m
+[3.623s] [ 64%] [32m[1mLinking CXX executable example_tricycle_drive[0m
+[3.628s] [ 71%] [32m[1mLinking CXX executable example_diff_drive[0m
+[3.628s] [ 78%] [32m[1mLinking CXX executable example_gripper[0m
+[3.689s] [ 78%] Built target example_ackermann_drive
+[3.732s] [ 78%] Built target example_diff_drive
+[3.737s] [ 78%] Built target example_tricycle_drive
+[3.741s] [ 78%] Built target example_gripper
+[3.829s] [ 85%] [32m[1mLinking CXX executable example_velocity[0m
+[3.889s] [ 92%] [32m[1mLinking CXX executable example_position[0m
+[3.941s] [100%] [32m[1mLinking CXX executable example_effort[0m
+[3.950s] [100%] Built target example_velocity
+[4.006s] [100%] Built target example_position
+[4.060s] [100%] Built target example_effort
+[4.069s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos -- -j24 -l24
+[4.070s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos
+[4.075s] -- Install configuration: ""
+[4.075s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch
+[4.075s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py
+[4.075s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/ackermann_drive_example.launch.py
+[4.075s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/cart_example_velocity.launch.py
+[4.075s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/cart_example_effort.launch.py
+[4.075s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/pendulum_example_effort.launch.py
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/pendulum_example_position.launch.py
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/diff_drive_example_namespaced.launch.py
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/tricycle_drive_example.launch.py
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/mecanum_drive_example.launch.py
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/cart_example_position.launch.py
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/diff_drive_example.launch.py
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config
+[4.076s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/gripper_controller.yaml
+[4.077s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/mecanum_drive_controller.yaml
+[4.077s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/cart_controller_position.yaml
+[4.077s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/cart_controller_velocity.yaml
+[4.077s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/tricycle_drive_controller.yaml
+[4.077s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/diff_drive_controller.yaml
+[4.077s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/cart_controller_effort.yaml
+[4.077s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/ackermann_drive_controller.yaml
+[4.078s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf
+[4.078s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_ackermann_drive.xacro.urdf
+[4.078s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_tricycle_drive.xacro.urdf
+[4.078s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_gripper_mimic_joint.xacro.urdf
+[4.078s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_mecanum_drive.xacro.urdf
+[4.078s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_pendulum_position.xacro.urdf
+[4.078s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_cart_position.xacro.urdf
+[4.079s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_cart_effort.xacro.urdf
+[4.079s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_diff_drive.xacro.urdf
+[4.079s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_cart_velocity.xacro.urdf
+[4.079s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_pendulum_effort.xacro.urdf
+[4.079s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_position
+[4.080s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_position" to ""
+[4.080s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_velocity
+[4.081s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_velocity" to ""
+[4.081s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_effort
+[4.082s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_effort" to ""
+[4.082s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_diff_drive
+[4.083s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_diff_drive" to ""
+[4.083s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_tricycle_drive
+[4.084s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_tricycle_drive" to ""
+[4.084s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_ackermann_drive
+[4.085s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_ackermann_drive" to ""
+[4.085s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_gripper
+[4.086s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_gripper" to ""
+[4.086s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/gz_ros2_control_demos
+[4.086s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/gz_ros2_control_demos
+[4.086s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/ament_prefix_path.sh
+[4.086s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/ament_prefix_path.dsv
+[4.086s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/path.sh
+[4.086s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/path.dsv
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.bash
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.sh
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.zsh
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.dsv
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.dsv
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/ament_index/resource_index/packages/gz_ros2_control_demos
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/cmake/gz_ros2_control_demosConfig.cmake
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/cmake/gz_ros2_control_demosConfig-version.cmake
+[4.087s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.xml
+[4.089s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos

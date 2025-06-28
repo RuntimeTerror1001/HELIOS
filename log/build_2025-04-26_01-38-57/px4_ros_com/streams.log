@@ -1,0 +1,147 @@
+[0.006s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/px4_ros_com
+[0.040s] -- The C compiler identification is GNU 11.4.0
+[0.073s] -- The CXX compiler identification is GNU 11.4.0
+[0.077s] -- Detecting C compiler ABI info
+[0.121s] -- Detecting C compiler ABI info - done
+[0.125s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.125s] -- Detecting C compile features
+[0.126s] -- Detecting C compile features - done
+[0.127s] -- Detecting CXX compiler ABI info
+[0.176s] -- Detecting CXX compiler ABI info - done
+[0.179s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.180s] -- Detecting CXX compile features
+[0.180s] -- Detecting CXX compile features - done
+[0.182s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.363s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.412s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.431s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.434s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.438s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.445s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.453s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.475s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.482s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.484s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.503s] -- Found px4_msgs: 2.0.1 (/home/redpaladin/Projects/helios_ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.511s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.541s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.543s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.603s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.623s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.651s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.657s] -- Looking for pthread.h
+[0.703s] -- Looking for pthread.h - found
+[0.703s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.748s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.749s] -- Found Threads: TRUE  
+[0.776s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.788s] -- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)
+[0.793s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.852s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.857s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.857s] -- Configured cppcheck include dirs: /home/redpaladin/Projects/helios_ws/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/redpaladin/Projects/helios_ws/src/px4_ros_com/include/px4_ros_com>
+[0.857s] -- Configured cppcheck exclude dirs and/or files: 
+[0.861s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.861s] -- Configured cpplint exclude dirs and/or files: 
+[0.861s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.863s] -- Added test 'lint_cmake' to check CMake code style
+[0.863s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.867s] -- Added test 'uncrustify' to check C / C++ code style
+[0.867s] -- Configured uncrustify additional arguments: 
+[0.867s] -- Added test 'xmllint' to check XML markup files
+[0.869s] -- Configuring done
+[0.883s] -- Generating done
+[0.888s] -- Build files have been written to: /home/redpaladin/Projects/helios_ws/build/px4_ros_com
+[0.895s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/px4_ros_com
+[0.896s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/px4_ros_com -- -j24 -l24
+[0.928s] [  8%] [32mBuilding CXX object CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o[0m
+[0.928s] [ 16%] [32mBuilding CXX object CMakeFiles/vehicle_gps_position_listener.dir/src/examples/listeners/vehicle_gps_position_listener.cpp.o[0m
+[0.929s] [ 25%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[0.930s] [ 41%] [32mBuilding CXX object CMakeFiles/debug_vect_advertiser.dir/src/examples/advertisers/debug_vect_advertiser.cpp.o[0m
+[0.930s] [ 41%] [32mBuilding CXX object CMakeFiles/sensor_combined_listener.dir/src/examples/listeners/sensor_combined_listener.cpp.o[0m
+[0.930s] [ 50%] [32mBuilding CXX object CMakeFiles/offboard_control_srv.dir/src/examples/offboard/offboard_control_srv.cpp.o[0m
+[0.933s] [ 50%] Built target ament_cmake_python_copy_px4_ros_com
+[1.036s] running egg_info
+[1.036s] creating px4_ros_com.egg-info
+[1.043s] writing px4_ros_com.egg-info/PKG-INFO
+[1.043s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[1.043s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[1.043s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.063s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.063s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.083s] [ 50%] Built target ament_cmake_python_build_px4_ros_com_egg
+[3.530s] [ 58%] [32m[1mLinking CXX executable debug_vect_advertiser[0m
+[3.664s] [ 58%] Built target debug_vect_advertiser
+[3.969s] [ 66%] [32m[1mLinking CXX executable offboard_control[0m
+[4.091s] [ 66%] Built target offboard_control
+[4.481s] [ 75%] [32m[1mLinking CXX executable offboard_control_srv[0m
+[4.615s] [ 75%] Built target offboard_control_srv
+[4.924s] [ 83%] [32m[1mLinking CXX shared library libframe_transforms.so[0m
+[5.083s] [ 83%] Built target frame_transforms
+[5.793s] [ 91%] [32m[1mLinking CXX executable vehicle_gps_position_listener[0m
+[5.803s] [100%] [32m[1mLinking CXX executable sensor_combined_listener[0m
+[5.996s] [100%] Built target vehicle_gps_position_listener
+[6.005s] [100%] Built target sensor_combined_listener
+[6.013s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/px4_ros_com -- -j24 -l24
+[6.014s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/px4_ros_com
+[6.019s] -- Install configuration: ""
+[6.019s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[6.022s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener" to ""
+[6.022s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[6.024s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener" to ""
+[6.024s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[6.025s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser" to ""
+[6.025s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[6.026s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""
+[6.026s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv
+[6.027s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv" to ""
+[6.028s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[6.028s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[6.028s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/include/px4_ros_com
+[6.028s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[6.028s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/libframe_transforms.so
+[6.031s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/libframe_transforms.so" to ""
+[6.031s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//launch
+[6.031s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[6.031s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[6.031s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//test
+[6.031s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[6.031s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py
+[6.032s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py
+[6.053s] Listing '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...
+[6.053s] Compiling '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py'...
+[6.053s] Compiling '/home/redpaladin/Projects/helios_ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py'...
+[6.055s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib/px4_ros_com/offboard_control.py
+[6.055s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[6.056s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.dsv
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[6.057s] -- Installing: /home/redpaladin/Projects/helios_ws/install/px4_ros_com/share/px4_ros_com/package.xml
+[6.059s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/helios:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/px4_msgs/lib:/home/redpaladin/Projects/helios_ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/px4_ros_com

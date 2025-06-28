@@ -1,0 +1,15 @@
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ament_index/resource_index/package_run_dependencies/ign_ros2_control
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ament_index/resource_index/parent_prefix_path/ign_ros2_control
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.sh
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.dsv
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/path.sh
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/environment/path.dsv
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.bash
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.sh
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.zsh
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/local_setup.dsv
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.dsv
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ament_index/resource_index/packages/ign_ros2_control
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig.cmake
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig-version.cmake
+/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.xml

@@ -1,0 +1,33 @@
+[0.008s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.139s] -- The CXX compiler identification is GNU 11.4.0
+[0.147s] -- Detecting C compiler ABI info
+[0.205s] -- Detecting C compiler ABI info - done
+[0.210s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.210s] -- Detecting C compile features
+[0.210s] -- Detecting C compile features - done
+[0.213s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.280s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.280s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.294s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.294s]   By not providing "Findros2_control_cmake.cmake" in CMAKE_MODULE_PATH this
+[0.295s]   project has asked CMake to find a package configuration file provided by
+[0.295s]   "ros2_control_cmake", but CMake did not find one.
+[0.295s] 
+[0.295s]   Could not find a package configuration file provided by
+[0.295s]   "ros2_control_cmake" with any of the following names:
+[0.295s] 
+[0.295s]     ros2_control_cmakeConfig.cmake
+[0.295s]     ros2_control_cmake-config.cmake
+[0.295s] 
+[0.295s]   Add the installation prefix of "ros2_control_cmake" to CMAKE_PREFIX_PATH or
+[0.295s]   set "ros2_control_cmake_DIR" to a directory containing one of the above
+[0.295s]   files.  If "ros2_control_cmake" provides a separate development package or
+[0.295s]   SDK, be sure it has been installed.
+[0.295s] 
+[0.295s] [0m
+[0.295s] -- Configuring incomplete, errors occurred!
+[0.295s] See also "/home/redpaladin/Projects/helios_ws/build/gz_ros2_control/CMakeFiles/CMakeOutput.log".
+[0.298s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control

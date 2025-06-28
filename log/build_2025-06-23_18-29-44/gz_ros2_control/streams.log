@@ -1,0 +1,319 @@
+[0.011s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control
+[0.030s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.268s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.355s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[0.358s] -- Found controller_manager: 2.50.0 (/opt/ros/humble/share/controller_manager/cmake)
+[0.407s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.413s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.421s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.435s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.449s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.630s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.633s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.654s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.693s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.695s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.705s] -- Found FastRTPS: /usr/lib/x86_64-linux-gnu/cmake  
+[0.707s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.712s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.717s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.726s] -- Looking for pthread.h
+[0.777s] -- Looking for pthread.h - found
+[0.777s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.827s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.827s] -- Found Threads: TRUE  
+[0.892s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.902s] -- Looking for ignition-gazebo6 -- found version 6.17.0
+[0.908s] -- Searching for dependencies of ignition-gazebo6
+[0.909s] -- Looking for sdformat12 -- found version 12.8.0
+[0.909s] -- Searching for dependencies of sdformat12
+[0.912s] -- Checking for module 'tinyxml2'
+[0.924s] --   Found tinyxml2, version 9.0.0
+[0.949s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.949s] -- Searching for dependencies of ignition-math6
+[0.950s] -- Looking for ignition-utils1 -- found version 1.5.1
+[0.950s] -- Searching for dependencies of ignition-utils1
+[0.952s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[0.953s] -- Searching for dependencies of ignition-plugin1
+[0.953s] -- Searching for <ignition-plugin1> component [loader]
+[0.954s] -- Looking for ignition-plugin1-loader -- found version 1.4.0
+[0.954s] -- Searching for dependencies of ignition-plugin1-loader
+[0.954s] -- Searching for <ignition-plugin1> component [register]
+[0.955s] -- Looking for ignition-plugin1-register -- found version 1.4.0
+[0.955s] -- Searching for dependencies of ignition-plugin1-register
+[0.956s] -- Looking for ignition-transport11 -- found version 11.4.1
+[0.957s] -- Searching for dependencies of ignition-transport11
+[0.979s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.989s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.993s] -- Checking for module 'libzmq >= 4'
+[1.006s] --   Found libzmq , version 4.3.4
+[1.035s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.039s] -- Checking for module 'uuid'
+[1.050s] --   Found uuid, version 2.37.2
+[1.077s] -- Found UUID: TRUE  
+[1.077s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.077s] -- Searching for dependencies of ignition-utils1
+[1.077s] -- Searching for <ignition-utils1> component [cli]
+[1.078s] -- Looking for ignition-utils1-cli -- found version 1.5.1
+[1.078s] -- Searching for dependencies of ignition-utils1-cli
+[1.079s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.080s] -- Searching for dependencies of ignition-msgs8
+[1.094s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.094s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.100s] -- Searching for <ignition-transport11> component [log]
+[1.101s] -- Looking for ignition-transport11-log -- found version 11.4.1
+[1.101s] -- Searching for dependencies of ignition-transport11-log
+[1.102s] -- Searching for <ignition-transport11> component [parameters]
+[1.102s] -- Looking for ignition-transport11-parameters -- found version 11.4.1
+[1.103s] -- Searching for dependencies of ignition-transport11-parameters
+[1.103s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.104s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.104s] -- Searching for dependencies of ignition-common4
+[1.105s] -- Looking for dlfcn.h - found
+[1.105s] -- Looking for libdl - found
+[1.106s] -- Found DL: TRUE  
+[1.112s] -- Searching for <ignition-common4> component [profiler]
+[1.113s] -- Looking for ignition-common4-profiler -- found version 4.7.0
+[1.113s] -- Searching for dependencies of ignition-common4-profiler
+[1.113s] -- Searching for <ignition-common4> component [events]
+[1.114s] -- Looking for ignition-common4-events -- found version 4.7.0
+[1.114s] -- Searching for dependencies of ignition-common4-events
+[1.115s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.115s] -- Searching for <ignition-common4> component [av]
+[1.116s] -- Looking for ignition-common4-av -- found version 4.7.0
+[1.116s] -- Searching for dependencies of ignition-common4-av
+[1.120s] -- Checking for module 'libswscale'
+[1.131s] --   Found libswscale, version 5.9.100
+[1.160s] -- Found SWSCALE: TRUE  
+[1.164s] -- Checking for module 'libavdevice >= 56.4.100'
+[1.175s] --   Found libavdevice , version 58.13.100
+[1.201s] -- Found AVDEVICE: TRUE (Required is at least version "56.4.100") 
+[1.204s] -- Checking for module 'libavformat'
+[1.215s] --   Found libavformat, version 58.76.100
+[1.245s] -- Found AVFORMAT: TRUE  
+[1.248s] -- Checking for module 'libavcodec'
+[1.258s] --   Found libavcodec, version 58.134.100
+[1.283s] -- Found AVCODEC: TRUE  
+[1.287s] -- Checking for module 'libavutil'
+[1.298s] --   Found libavutil, version 56.70.100
+[1.325s] -- Found AVUTIL: TRUE  
+[1.326s] -- Looking for ignition-fuel_tools7 -- found version 7.3.1
+[1.327s] -- Searching for dependencies of ignition-fuel_tools7
+[1.391s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.397s] -- Checking for module 'jsoncpp'
+[1.408s] --   Found jsoncpp, version 1.9.5
+[1.436s] -- Found JSONCPP: TRUE  
+[1.440s] -- Checking for module 'libzip'
+[1.452s] --   Found libzip, version 1.7.3
+[1.481s] -- Found ZIP: TRUE  
+[1.482s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.482s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.482s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.484s] -- Looking for ignition-gui6 -- found version 6.8.0
+[1.484s] -- Searching for dependencies of ignition-gui6
+[1.505s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.505s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.505s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.505s] -- Looking for ignition-transport11 -- found version 11.4.1
+[1.506s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[1.506s] -- Searching for dependencies of ignition-rendering6
+[1.507s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.507s] -- Searching for dependencies of ignition-math6
+[1.507s] -- Searching for <ignition-math6> component [eigen3]
+[1.508s] -- Looking for ignition-math6-eigen3 -- found version 6.15.1
+[1.508s] -- Searching for dependencies of ignition-math6-eigen3
+[1.514s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.515s] -- Searching for dependencies of ignition-common4
+[1.515s] -- Looking for dlfcn.h - found
+[1.515s] -- Looking for libdl - found
+[1.522s] -- Searching for <ignition-common4> component [graphics]
+[1.522s] -- Looking for ignition-common4-graphics -- found version 4.7.0
+[1.523s] -- Searching for dependencies of ignition-common4-graphics
+[1.523s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.523s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.524s] -- Searching for <ignition-common4> component [events]
+[1.524s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.524s] -- Searching for dependencies of ignition-plugin1
+[1.524s] -- Searching for <ignition-plugin1> component [all]
+[1.525s] -- Looking for all libraries of ignition-plugin1 -- found version 1.4.0
+[1.526s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.527s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.545s] -- Looking for ignition-physics5 -- found version 5.3.2
+[1.545s] -- Searching for dependencies of ignition-physics5
+[1.545s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.546s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.546s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.546s] -- Searching for <ignition-physics5> component [heightmap]
+[1.547s] -- Looking for ignition-physics5-heightmap -- found version 5.3.2
+[1.548s] -- Searching for dependencies of ignition-physics5-heightmap
+[1.548s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.548s] -- Searching for <ignition-physics5> component [mesh]
+[1.549s] -- Looking for ignition-physics5-mesh -- found version 5.3.2
+[1.549s] -- Searching for dependencies of ignition-physics5-mesh
+[1.549s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.550s] -- Searching for <ignition-physics5> component [sdf]
+[1.551s] -- Looking for ignition-physics5-sdf -- found version 5.3.2
+[1.551s] -- Searching for dependencies of ignition-physics5-sdf
+[1.551s] -- Looking for sdformat12 -- found version 12.8.0
+[1.552s] -- Looking for ignition-sensors6 -- found version 6.8.1
+[1.553s] -- Searching for dependencies of ignition-sensors6
+[1.571s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.572s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.572s] -- Looking for ignition-common4 -- found version 4.7.0
+[1.572s] -- Looking for ignition-transport11 -- found version 11.4.1
+[1.572s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[1.573s] -- Looking for ignition-msgs8 -- found version 8.7.0
+[1.573s] -- Looking for sdformat12 -- found version 12.8.0
+[1.573s] -- Searching for <ignition-sensors6> component [air_pressure]
+[1.574s] -- Looking for ignition-sensors6-air_pressure -- found version 6.8.1
+[1.574s] -- Searching for dependencies of ignition-sensors6-air_pressure
+[1.575s] -- Searching for <ignition-sensors6> component [altimeter]
+[1.576s] -- Looking for ignition-sensors6-altimeter -- found version 6.8.1
+[1.576s] -- Searching for dependencies of ignition-sensors6-altimeter
+[1.576s] -- Searching for <ignition-sensors6> component [imu]
+[1.577s] -- Looking for ignition-sensors6-imu -- found version 6.8.1
+[1.577s] -- Searching for dependencies of ignition-sensors6-imu
+[1.578s] -- Searching for <ignition-sensors6> component [force_torque]
+[1.578s] -- Looking for ignition-sensors6-force_torque -- found version 6.8.1
+[1.579s] -- Searching for dependencies of ignition-sensors6-force_torque
+[1.579s] -- Searching for <ignition-sensors6> component [logical_camera]
+[1.580s] -- Looking for ignition-sensors6-logical_camera -- found version 6.8.1
+[1.580s] -- Searching for dependencies of ignition-sensors6-logical_camera
+[1.580s] -- Searching for <ignition-sensors6> component [magnetometer]
+[1.581s] -- Looking for ignition-sensors6-magnetometer -- found version 6.8.1
+[1.581s] -- Searching for dependencies of ignition-sensors6-magnetometer
+[1.582s] -- Searching for <ignition-sensors6> component [navsat]
+[1.583s] -- Looking for ignition-sensors6-navsat -- found version 6.8.1
+[1.583s] -- Searching for dependencies of ignition-sensors6-navsat
+[1.583s] -- Searching for <ignition-sensors6> component [rendering]
+[1.584s] -- Looking for ignition-sensors6-rendering -- found version 6.8.1
+[1.584s] -- Searching for dependencies of ignition-sensors6-rendering
+[1.585s] -- Searching for <ignition-sensors6> component [lidar]
+[1.585s] -- Looking for ignition-sensors6-lidar -- found version 6.8.1
+[1.586s] -- Searching for dependencies of ignition-sensors6-lidar
+[1.586s] -- Looking for ignition-sensors6 -- found version 6.8.1
+[1.586s] -- Searching for <ignition-sensors6> component [gpu_lidar]
+[1.587s] -- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.1
+[1.587s] -- Searching for dependencies of ignition-sensors6-gpu_lidar
+[1.588s] -- Looking for ignition-sensors6 -- found version 6.8.1
+[1.588s] -- Searching for <ignition-sensors6> component [camera]
+[1.589s] -- Looking for ignition-sensors6-camera -- found version 6.8.1
+[1.589s] -- Searching for dependencies of ignition-sensors6-camera
+[1.589s] -- Looking for ignition-sensors6 -- found version 6.8.1
+[1.590s] -- Searching for <ignition-sensors6> component [boundingbox_camera]
+[1.590s] -- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.1
+[1.591s] -- Searching for dependencies of ignition-sensors6-boundingbox_camera
+[1.591s] -- Searching for <ignition-sensors6> component [segmentation_camera]
+[1.592s] -- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.1
+[1.592s] -- Searching for dependencies of ignition-sensors6-segmentation_camera
+[1.592s] -- Searching for <ignition-sensors6> component [depth_camera]
+[1.593s] -- Looking for ignition-sensors6-depth_camera -- found version 6.8.1
+[1.593s] -- Searching for dependencies of ignition-sensors6-depth_camera
+[1.594s] -- Looking for ignition-sensors6 -- found version 6.8.1
+[1.594s] -- Searching for <ignition-sensors6> component [rgbd_camera]
+[1.595s] -- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.1
+[1.595s] -- Searching for dependencies of ignition-sensors6-rgbd_camera
+[1.595s] -- Looking for ignition-sensors6 -- found version 6.8.1
+[1.596s] -- Searching for <ignition-sensors6> component [thermal_camera]
+[1.596s] -- Looking for ignition-sensors6-thermal_camera -- found version 6.8.1
+[1.596s] -- Searching for dependencies of ignition-sensors6-thermal_camera
+[1.597s] -- Looking for ignition-sensors6 -- found version 6.8.1
+[1.597s] -- Looking for ignition-rendering6 -- found version 6.6.3
+[1.598s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.599s] -- Looking for ignition-utils1 -- found version 1.5.1
+[1.615s] -- Compiling against Gazebo fortress
+[1.615s] -- Looking for ignition-plugin1 -- found version 1.4.0
+[1.640s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.707s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.708s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.708s] -- Configured cppcheck include dirs: /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control/include
+[1.708s] -- Configured cppcheck exclude dirs and/or files: 
+[1.709s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.709s] -- Configured cpplint exclude dirs and/or files: 
+[1.710s] -- Added test 'lint_cmake' to check CMake code style
+[1.711s] -- Added test 'uncrustify' to check C / C++ code style
+[1.711s] -- Configured uncrustify additional arguments: 
+[1.711s] -- Added test 'xmllint' to check XML markup files
+[1.714s] -- Configuring done
+[1.756s] [33mCMake Warning at CMakeLists.txt:53 (add_library):
+[1.756s]   Cannot generate a safe runtime search path for target
+[1.756s]   gz_ros2_control-system because files in some directories may conflict with
+[1.756s]   libraries in implicit directories:
+[1.756s] 
+[1.756s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[1.756s]       /opt/ros/humble/lib
+[1.756s] 
+[1.756s]   Some of these libraries may not be found correctly.
+[1.756s] 
+[1.756s] [0m
+[1.766s] [33mCMake Warning at CMakeLists.txt:73 (add_library):
+[1.766s]   Cannot generate a safe runtime search path for target gz_hardware_plugins
+[1.766s]   because files in some directories may conflict with libraries in implicit
+[1.766s]   directories:
+[1.766s] 
+[1.766s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[1.767s]       /opt/ros/humble/lib
+[1.767s] 
+[1.767s]   Some of these libraries may not be found correctly.
+[1.767s] 
+[1.767s] [0m
+[1.779s] [33mCMake Warning at CMakeLists.txt:100 (add_library):
+[1.780s]   Cannot generate a safe runtime search path for target
+[1.780s]   ign_ros2_control-system because files in some directories may conflict with
+[1.780s]   libraries in implicit directories:
+[1.780s] 
+[1.780s]     runtime library [libfastcdr.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[1.780s]       /opt/ros/humble/lib
+[1.780s] 
+[1.780s]   Some of these libraries may not be found correctly.
+[1.780s] 
+[1.780s] [0m
+[1.780s] -- Generating done
+[1.788s] -- Build files have been written to: /home/redpaladin/Projects/helios_ws/build/gz_ros2_control
+[1.796s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control
+[1.798s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control -- -j24 -l24
+[1.834s] [ 33%] [32mBuilding CXX object CMakeFiles/gz_ros2_control-system.dir/src/gz_ros2_control_plugin.cpp.o[0m
+[1.834s] [ 33%] [32mBuilding CXX object CMakeFiles/gz_hardware_plugins.dir/src/gz_system.cpp.o[0m
+[1.834s] [ 50%] [32mBuilding CXX object CMakeFiles/ign_ros2_control-system.dir/src/gz_ros2_control_plugin.cpp.o[0m
+[8.871s] [ 66%] [32m[1mLinking CXX shared library libgz_hardware_plugins.so[0m
+[8.990s] [ 83%] [32m[1mLinking CXX shared library libgz_ros2_control-system.so[0m
+[9.012s] [100%] [32m[1mLinking CXX shared library libign_ros2_control-system.so[0m
+[9.241s] [100%] Built target gz_hardware_plugins
+[9.363s] [100%] Built target gz_ros2_control-system
+[9.412s] [100%] Built target ign_ros2_control-system
+[9.421s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control -- -j24 -l24
+[9.427s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control
+[9.432s] -- Install configuration: ""
+[9.432s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/libgz_hardware_plugins.so
+[9.435s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/libgz_hardware_plugins.so" to ""
+[9.435s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/include
+[9.435s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/include/gz_ros2_control
+[9.435s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/include/gz_ros2_control/gz_system.hpp
+[9.435s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/include/gz_ros2_control/gz_system_interface.hpp
+[9.435s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/include/gz_ros2_control/gz_ros2_control_plugin.hpp
+[9.436s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/environment/library_path.sh
+[9.436s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/environment/library_path.dsv
+[9.436s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/libgz_ros2_control-system.so
+[9.439s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/libgz_ros2_control-system.so" to ""
+[9.439s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/libign_ros2_control-system.so
+[9.442s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/libign_ros2_control-system.so" to ""
+[9.442s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/gz_hardware_plugins.xml
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/ament_index/resource_index/package_run_dependencies/gz_ros2_control
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/ament_index/resource_index/parent_prefix_path/gz_ros2_control
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/environment/ament_prefix_path.sh
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/environment/ament_prefix_path.dsv
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/environment/path.sh
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/environment/path.dsv
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.bash
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.sh
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.zsh
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/local_setup.dsv
+[9.443s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.dsv
+[9.444s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/ament_index/resource_index/packages/gz_ros2_control
+[9.445s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/ament_index/resource_index/gz_ros2_control__pluginlib__plugin/gz_ros2_control
+[9.445s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.445s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake
+[9.445s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/gz_ros2_controlConfig.cmake
+[9.445s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/cmake/gz_ros2_controlConfig-version.cmake
+[9.445s] -- Installing: /home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.xml
+[9.446s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control

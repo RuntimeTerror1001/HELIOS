@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<robot name="HELIOS">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="3.76"/>
+      <inertia ixx="0.017" ixy="0" ixz="0" iyy="0.018" iyz="0" izz="0.028"/>
+    </inertial>
+    <visual name="base_link_inertia_visual">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <geometry>
+        <mesh filename="meshes/m100.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="left_flashlight_led">
+      <origin xyz="0.247592 0.24728 -0.017556" rpy="0.0 0.0 2.35619"/>
+      <geometry>
+        <mesh filename="meshes/cree_xhp70.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="right_flashlight_led">
+      <origin xyz="0.247592 -0.24728 -0.017556" rpy="0.0 0.0 0.785398"/>
+      <geometry>
+        <mesh filename="meshes/cree_xhp70.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <visual name="camera_visual">
+      <origin xyz="0.192 -0.015 -0.023" rpy="0.0 0.174533 0.0"/>
+    </visual>
+    <visual name="thermal_camera_visual">
+      <origin xyz="0.192 0.015 -0.023" rpy="0.0 0.174533 0.0"/>
+    </visual>
+    <visual name="laser_visual">
+      <origin xyz="0.0 0.0 0.05" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision name="base_link_inertia_collision">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <geometry>
+        <box size="0.82 0.82 0.375"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="rotor_0">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.005"/>
+      <inertia ixx="9.75e-07" ixy="0" ixz="0" iyy="8.13545e-05" iyz="0" izz="8.22545e-05"/>
+    </inertial>
+    <visual name="rotor_0_visual">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <geometry>
+        <mesh filename="meshes/m100_propeller_ccw.dae" scale="0.175 0.175 0.175"/>
+      </geometry>
+    </visual>
+    <collision name="rotor_0_collision">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="rotor_1">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.005"/>
+      <inertia ixx="9.75e-07" ixy="0" ixz="0" iyy="8.13545e-05" iyz="0" izz="8.22545e-05"/>
+    </inertial>
+    <visual name="rotor_1_visual">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <geometry>
+        <mesh filename="meshes/m100_propeller_ccw.dae" scale="0.175 0.175 0.175"/>
+      </geometry>
+    </visual>
+    <collision name="rotor_1_collision">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="rotor_2">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.005"/>
+      <inertia ixx="9.75e-07" ixy="0" ixz="0" iyy="8.13545e-05" iyz="0" izz="8.22545e-05"/>
+    </inertial>
+    <visual name="rotor_2_visual">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <geometry>
+        <mesh filename="meshes/m100_propeller_cw.dae" scale="0.175 0.175 0.175"/>
+      </geometry>
+    </visual>
+    <collision name="rotor_2_collision">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="rotor_3">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.005"/>
+      <inertia ixx="9.75e-07" ixy="0" ixz="0" iyy="8.13545e-05" iyz="0" izz="8.22545e-05"/>
+    </inertial>
+    <visual name="rotor_3_visual">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <geometry>
+        <mesh filename="meshes/m100_propeller_cw.dae" scale="0.175 0.175 0.175"/>
+      </geometry>
+    </visual>
+    <collision name="rotor_3_collision">
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <joint name="rotor_0_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="rotor_0"/>
+    <origin xyz="0.2263 -0.2263 0.038" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16" effort="0" velocity="0"/>
+  </joint>
+  <joint name="rotor_1_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="rotor_1"/>
+    <origin xyz="-0.2263 0.2263 0.038" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16" effort="0" velocity="0"/>
+  </joint>
+  <joint name="rotor_2_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="rotor_2"/>
+    <origin xyz="0.2263 0.2263 0.038" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16" effort="0" velocity="0"/>
+  </joint>
+  <joint name="rotor_3_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="rotor_3"/>
+    <origin xyz="-0.2263 -0.2263 0.038" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e+16" upper="1e+16" effort="0" velocity="0"/>
+  </joint>
+
+  <gazebo>
+    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+      <parameters>/home/redpaladin/Projects/helios_ws/src/helios/config/helios_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+  <ros2_control name="IgnitionSystem" type="system">
+    <hardware>
+      <plugin>ign_ros2_control/IgnitionSystem</plugin>
+    </hardware>
+
+    <joint name="rotor_0_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="rotor_1_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="rotor_2_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="rotor_3_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+</robot>

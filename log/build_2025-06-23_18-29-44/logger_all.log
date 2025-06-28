@@ -1,0 +1,522 @@
+[0.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x772f8b191210>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x772f8b190af0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x772f8b190af0>>, mixin_verb=('build',))
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.099s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/redpaladin/Projects/helios_ws'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['ros']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'ros'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['cmake', 'python']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'cmake'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'python'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extensions ['python_setup_py']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control) by extension 'python_setup_py'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/Dockerfile) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'ignore_ament_install'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['colcon_pkg']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'colcon_pkg'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['colcon_meta']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'colcon_meta'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'ignore_ament_install'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['colcon_pkg']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'colcon_pkg'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['colcon_meta']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'colcon_meta'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/doc/img) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control) by extension 'ros'
+[0.117s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gz_ros2_control/gz_ros2_control' with type 'ros.ament_cmake' and name 'gz_ros2_control'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extension 'ignore_ament_install'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extensions ['colcon_pkg']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_demos) by extension 'ros'
+[0.118s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gz_ros2_control/gz_ros2_control_demos' with type 'ros.ament_cmake' and name 'gz_ros2_control_demos'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extension 'ignore_ament_install'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extensions ['colcon_pkg']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extension 'colcon_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extensions ['colcon_meta']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extension 'colcon_meta'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extensions ['ros']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/gz_ros2_control_tests) by extension 'ros'
+[0.119s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gz_ros2_control/gz_ros2_control_tests' with type 'ros.ament_cmake' and name 'gz_ros2_control_tests'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extension 'ignore'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extension 'ignore_ament_install'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extensions ['colcon_pkg']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extension 'colcon_pkg'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extensions ['colcon_meta']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extension 'colcon_meta'
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extensions ['ros']
+[0.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control) by extension 'ros'
+[0.120s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gz_ros2_control/ign_ros2_control' with type 'ros.ament_cmake' and name 'ign_ros2_control'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extension 'ignore_ament_install'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extensions ['colcon_pkg']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extension 'colcon_pkg'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extensions ['colcon_meta']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extension 'colcon_meta'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extensions ['ros']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/gz_ros2_control/ign_ros2_control_demos) by extension 'ros'
+[0.121s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gz_ros2_control/ign_ros2_control_demos' with type 'ros.ament_cmake' and name 'ign_ros2_control_demos'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/helios) by extension 'ros'
+[0.121s] DEBUG:colcon.colcon_core.package_identification:Package 'src/helios' with type 'ros.ament_python' and name 'helios'
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.135s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.135s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/redpaladin/Projects/helios_ws/install/px4_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.135s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/redpaladin/Projects/helios_ws/install/px4_ros_com' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.135s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/redpaladin/Projects/helios_ws/install/px4_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.136s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/redpaladin/Projects/helios_ws/install
+[0.136s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/redpaladin/Projects/real_steel_ws/install
+[0.137s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 346 installed packages in /opt/ros/humble
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'gz_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'helios' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'helios' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/helios', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/helios', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/helios', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'gz_ros2_control_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_demos', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'ign_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'ign_ros2_control_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'ign_ros2_control_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control_demos', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'gz_ros2_control_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'gz_ros2_control_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests', 'merge_install': False, 'path': '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_tests', 'symlink_install': False, 'test_result_base': None}
+[0.182s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.182s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.183s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control' with build type 'ament_cmake'
+[0.183s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control'
+[0.184s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.184s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.184s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.187s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/helios' with build type 'ament_python'
+[0.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('helios', 'ament_prefix_path')
+[0.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.ps1'
+[0.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.dsv'
+[0.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/ament_prefix_path.sh'
+[0.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.189s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control
+[0.329s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/redpaladin/Projects/helios_ws/src/helios'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.728s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/src/helios': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[0.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/src/helios' returned '0': PYTHONPATH=/home/redpaladin/Projects/helios_ws/build/helios/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/helios build --build-base /home/redpaladin/Projects/helios_ws/build/helios/build install --record /home/redpaladin/Projects/helios_ws/build/helios/install.log --single-version-externally-managed install_data
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios' for CMake module files
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios' for CMake config files
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib'
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/bin'
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib/pkgconfig/helios.pc'
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages'
+[0.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('helios', 'pythonpath')
+[0.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.ps1'
+[0.998s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.dsv'
+[0.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/hook/pythonpath.sh'
+[0.998s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/helios/bin'
+[0.998s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(helios)
+[0.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.ps1'
+[0.999s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.dsv'
+[0.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.sh'
+[0.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.bash'
+[1.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.zsh'
+[1.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/helios/share/colcon-core/packages/helios)
+[1.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control
+[1.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control -- -j24 -l24
+[9.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control -- -j24 -l24
+[9.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control
+[9.629s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gz_ros2_control)
+[9.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control
+[9.630s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control' for CMake module files
+[9.630s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control' for CMake config files
+[9.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control', 'cmake_prefix_path')
+[9.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/cmake_prefix_path.ps1'
+[9.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/cmake_prefix_path.dsv'
+[9.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/cmake_prefix_path.sh'
+[9.631s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib'
+[9.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control', 'ld_library_path_lib')
+[9.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/ld_library_path_lib.ps1'
+[9.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/ld_library_path_lib.dsv'
+[9.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/ld_library_path_lib.sh'
+[9.632s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/bin'
+[9.632s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/pkgconfig/gz_ros2_control.pc'
+[9.632s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/python3.10/site-packages'
+[9.632s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/bin'
+[9.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.ps1'
+[9.632s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.dsv'
+[9.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.sh'
+[9.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.bash'
+[9.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.zsh'
+[9.633s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/colcon-core/packages/gz_ros2_control)
+[9.634s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gz_ros2_control)
+[9.634s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control' for CMake module files
+[9.634s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control' for CMake config files
+[9.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control', 'cmake_prefix_path')
+[9.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/cmake_prefix_path.ps1'
+[9.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/cmake_prefix_path.dsv'
+[9.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/cmake_prefix_path.sh'
+[9.635s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib'
+[9.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control', 'ld_library_path_lib')
+[9.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/ld_library_path_lib.ps1'
+[9.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/ld_library_path_lib.dsv'
+[9.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/hook/ld_library_path_lib.sh'
+[9.636s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/bin'
+[9.636s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/pkgconfig/gz_ros2_control.pc'
+[9.636s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib/python3.10/site-packages'
+[9.636s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/bin'
+[9.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.ps1'
+[9.636s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.dsv'
+[9.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.sh'
+[9.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.bash'
+[9.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/gz_ros2_control/package.zsh'
+[9.637s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/share/colcon-core/packages/gz_ros2_control)
+[9.637s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_demos' with build type 'ament_cmake'
+[9.637s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_demos'
+[9.637s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.637s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.640s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control' with build type 'ament_cmake'
+[9.640s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control'
+[9.640s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.640s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos
+[9.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control
+[10.155s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control
+[10.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control -- -j24 -l24
+[10.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control -- -j24 -l24
+[10.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control
+[10.187s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ign_ros2_control)
+[10.187s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control' for CMake module files
+[10.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control
+[10.188s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control' for CMake config files
+[10.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('ign_ros2_control', 'cmake_prefix_path')
+[10.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/hook/cmake_prefix_path.ps1'
+[10.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/hook/cmake_prefix_path.dsv'
+[10.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/hook/cmake_prefix_path.sh'
+[10.189s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/bin'
+[10.189s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/lib/pkgconfig/ign_ros2_control.pc'
+[10.189s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/lib/python3.10/site-packages'
+[10.189s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/bin'
+[10.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.ps1'
+[10.189s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.dsv'
+[10.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.sh'
+[10.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.bash'
+[10.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.zsh'
+[10.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/colcon-core/packages/ign_ros2_control)
+[10.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ign_ros2_control)
+[10.190s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control' for CMake module files
+[10.191s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control' for CMake config files
+[10.191s] Level 1:colcon.colcon_core.shell:create_environment_hook('ign_ros2_control', 'cmake_prefix_path')
+[10.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/hook/cmake_prefix_path.ps1'
+[10.191s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/hook/cmake_prefix_path.dsv'
+[10.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/hook/cmake_prefix_path.sh'
+[10.191s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/bin'
+[10.191s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/lib/pkgconfig/ign_ros2_control.pc'
+[10.192s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/lib/python3.10/site-packages'
+[10.192s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/bin'
+[10.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.ps1'
+[10.192s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.dsv'
+[10.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.sh'
+[10.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.bash'
+[10.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/ign_ros2_control/package.zsh'
+[10.193s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/ign_ros2_control/share/colcon-core/packages/ign_ros2_control)
+[10.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos
+[10.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos -- -j24 -l24
+[13.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos -- -j24 -l24
+[13.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos
+[13.726s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gz_ros2_control_demos)
+[13.726s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos' for CMake module files
+[13.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_demos
+[13.727s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos' for CMake config files
+[13.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control_demos', 'cmake_prefix_path')
+[13.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/hook/cmake_prefix_path.ps1'
+[13.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/hook/cmake_prefix_path.dsv'
+[13.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/hook/cmake_prefix_path.sh'
+[13.728s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib'
+[13.728s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/bin'
+[13.728s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/pkgconfig/gz_ros2_control_demos.pc'
+[13.728s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/python3.10/site-packages'
+[13.728s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/bin'
+[13.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.ps1'
+[13.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.dsv'
+[13.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.sh'
+[13.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.bash'
+[13.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.zsh'
+[13.729s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/colcon-core/packages/gz_ros2_control_demos)
+[13.730s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gz_ros2_control_demos)
+[13.730s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos' for CMake module files
+[13.730s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos' for CMake config files
+[13.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control_demos', 'cmake_prefix_path')
+[13.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/hook/cmake_prefix_path.ps1'
+[13.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/hook/cmake_prefix_path.dsv'
+[13.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/hook/cmake_prefix_path.sh'
+[13.731s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib'
+[13.731s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/bin'
+[13.731s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/pkgconfig/gz_ros2_control_demos.pc'
+[13.731s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/lib/python3.10/site-packages'
+[13.731s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/bin'
+[13.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.ps1'
+[13.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.dsv'
+[13.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.sh'
+[13.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.bash'
+[13.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.zsh'
+[13.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos/share/colcon-core/packages/gz_ros2_control_demos)
+[13.733s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control_demos' with build type 'ament_cmake'
+[13.733s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control_demos'
+[13.733s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.733s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos
+[14.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos
+[14.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos -- -j24 -l24
+[14.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos -- -j24 -l24
+[14.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos
+[14.534s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ign_ros2_control_demos)
+[14.534s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos' for CMake module files
+[14.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos
+[14.535s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos' for CMake config files
+[14.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('ign_ros2_control_demos', 'cmake_prefix_path')
+[14.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/hook/cmake_prefix_path.ps1'
+[14.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/hook/cmake_prefix_path.dsv'
+[14.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/hook/cmake_prefix_path.sh'
+[14.536s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib'
+[14.536s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/bin'
+[14.536s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/pkgconfig/ign_ros2_control_demos.pc'
+[14.536s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/python3.10/site-packages'
+[14.536s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/bin'
+[14.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.ps1'
+[14.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.dsv'
+[14.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.sh'
+[14.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.bash'
+[14.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.zsh'
+[14.538s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/colcon-core/packages/ign_ros2_control_demos)
+[14.538s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ign_ros2_control_demos)
+[14.538s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos' for CMake module files
+[14.538s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos' for CMake config files
+[14.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('ign_ros2_control_demos', 'cmake_prefix_path')
+[14.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/hook/cmake_prefix_path.ps1'
+[14.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/hook/cmake_prefix_path.dsv'
+[14.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/hook/cmake_prefix_path.sh'
+[14.539s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib'
+[14.539s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/bin'
+[14.539s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/pkgconfig/ign_ros2_control_demos.pc'
+[14.539s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/python3.10/site-packages'
+[14.539s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/bin'
+[14.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.ps1'
+[14.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.dsv'
+[14.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.sh'
+[14.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.bash'
+[14.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.zsh'
+[14.541s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/colcon-core/packages/ign_ros2_control_demos)
+[14.541s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_tests' with build type 'ament_cmake'
+[14.541s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_tests'
+[14.541s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.541s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_tests -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests
+[15.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/gz_ros2_control_tests -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests
+[15.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests -- -j24 -l24
+[15.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests -- -j24 -l24
+[15.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests
+[15.696s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gz_ros2_control_tests)
+[15.697s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests' for CMake module files
+[15.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/gz_ros2_control_tests
+[15.697s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests' for CMake config files
+[15.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control_tests', 'cmake_prefix_path')
+[15.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/hook/cmake_prefix_path.ps1'
+[15.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/hook/cmake_prefix_path.dsv'
+[15.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/hook/cmake_prefix_path.sh'
+[15.698s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/bin'
+[15.698s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/lib/pkgconfig/gz_ros2_control_tests.pc'
+[15.698s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/lib/python3.10/site-packages'
+[15.698s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/bin'
+[15.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.ps1'
+[15.699s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.dsv'
+[15.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.sh'
+[15.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.bash'
+[15.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.zsh'
+[15.699s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/colcon-core/packages/gz_ros2_control_tests)
+[15.700s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gz_ros2_control_tests)
+[15.700s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests' for CMake module files
+[15.700s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests' for CMake config files
+[15.700s] Level 1:colcon.colcon_core.shell:create_environment_hook('gz_ros2_control_tests', 'cmake_prefix_path')
+[15.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/hook/cmake_prefix_path.ps1'
+[15.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/hook/cmake_prefix_path.dsv'
+[15.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/hook/cmake_prefix_path.sh'
+[15.701s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/bin'
+[15.701s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/lib/pkgconfig/gz_ros2_control_tests.pc'
+[15.701s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/lib/python3.10/site-packages'
+[15.701s] Level 1:colcon.colcon_core.environment:checking '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/bin'
+[15.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.ps1'
+[15.701s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.dsv'
+[15.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.sh'
+[15.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.bash'
+[15.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.zsh'
+[15.702s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_tests/share/colcon-core/packages/gz_ros2_control_tests)
+[15.702s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.702s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.702s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.702s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.707s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.707s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.707s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.716s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.ps1'
+[15.717s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/Projects/helios_ws/install/_local_setup_util_ps1.py'
+[15.717s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.ps1'
+[15.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.sh'
+[15.718s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/redpaladin/Projects/helios_ws/install/_local_setup_util_sh.py'
+[15.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.sh'
+[15.719s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.bash'
+[15.720s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.bash'
+[15.720s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/redpaladin/Projects/helios_ws/install/local_setup.zsh'
+[15.721s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/redpaladin/Projects/helios_ws/install/setup.zsh'

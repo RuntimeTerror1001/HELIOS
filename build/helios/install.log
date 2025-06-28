@@ -1,8 +1,10 @@
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/__init__.py
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/helios_tf_publisher.py
+/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/helios_tf_publisher_updated.py
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/keyboard_control.py
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/__pycache__/__init__.cpython-310.pyc
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/__pycache__/helios_tf_publisher.cpython-310.pyc
+/home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/__pycache__/helios_tf_publisher_updated.cpython-310.pyc
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios/__pycache__/keyboard_control.cpython-310.pyc
 /home/redpaladin/Projects/helios_ws/install/helios/share/ament_index/resource_index/packages/helios
 /home/redpaladin/Projects/helios_ws/install/helios/share/helios/package.xml
@@ -15,4 +17,5 @@
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info/entry_points.txt
 /home/redpaladin/Projects/helios_ws/install/helios/lib/python3.10/site-packages/helios-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/redpaladin/Projects/helios_ws/install/helios/lib/helios/helios_tf_publisher
+/home/redpaladin/Projects/helios_ws/install/helios/lib/helios/helios_tf_publisher_updated
 /home/redpaladin/Projects/helios_ws/install/helios/lib/helios/keyboard_control

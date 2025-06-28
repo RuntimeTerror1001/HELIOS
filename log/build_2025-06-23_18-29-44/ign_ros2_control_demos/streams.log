@@ -1,0 +1,102 @@
+[0.006s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos
+[0.041s] -- The C compiler identification is GNU 11.4.0
+[0.073s] -- The CXX compiler identification is GNU 11.4.0
+[0.077s] -- Detecting C compiler ABI info
+[0.122s] -- Detecting C compiler ABI info - done
+[0.126s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.126s] -- Detecting C compile features
+[0.126s] -- Detecting C compile features - done
+[0.128s] -- Detecting CXX compiler ABI info
+[0.177s] -- Detecting CXX compiler ABI info - done
+[0.181s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.181s] -- Detecting CXX compile features
+[0.181s] -- Detecting CXX compile features - done
+[0.184s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.385s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.449s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[0.465s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.470s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.523s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.524s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.524s] -- Configured cppcheck include dirs: 
+[0.524s] -- Configured cppcheck exclude dirs and/or files: 
+[0.525s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.525s] -- Configured cpplint exclude dirs and/or files: 
+[0.525s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.526s] -- Added test 'lint_cmake' to check CMake code style
+[0.526s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.527s] -- Added test 'uncrustify' to check C / C++ code style
+[0.527s] -- Configured uncrustify additional arguments: 
+[0.527s] -- Added test 'xmllint' to check XML markup files
+[0.528s] -- Configuring done
+[0.534s] -- Generating done
+[0.537s] -- Build files have been written to: /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos
+[0.540s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/redpaladin/Projects/helios_ws/src/gz_ros2_control/ign_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos
+[0.541s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos -- -j24 -l24
+[0.571s] [  7%] [32mBuilding CXX object CMakeFiles/example_position.dir/examples/example_position.cpp.o[0m
+[0.572s] [ 21%] [32mBuilding CXX object CMakeFiles/example_tricycle_drive.dir/examples/example_tricycle_drive.cpp.o[0m
+[0.572s] [ 21%] [32mBuilding CXX object CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o[0m
+[0.573s] [ 35%] [32mBuilding CXX object CMakeFiles/example_effort.dir/examples/example_position.cpp.o[0m
+[0.573s] [ 35%] [32mBuilding CXX object CMakeFiles/example_velocity.dir/examples/example_position.cpp.o[0m
+[0.573s] [ 42%] [32mBuilding CXX object CMakeFiles/example_ackermann_drive.dir/examples/example_ackermann_drive.cpp.o[0m
+[0.573s] [ 50%] [32mBuilding CXX object CMakeFiles/example_diff_drive.dir/examples/example_diff_drive.cpp.o[0m
+[0.715s] [ 64%] [32m[1mLinking CXX executable example_gripper[0m
+[0.715s] [ 64%] [32m[1mLinking CXX executable example_position[0m
+[0.715s] [ 71%] [32m[1mLinking CXX executable example_tricycle_drive[0m
+[0.716s] [ 78%] [32m[1mLinking CXX executable example_diff_drive[0m
+[0.719s] [ 85%] [32m[1mLinking CXX executable example_velocity[0m
+[0.721s] [ 92%] [32m[1mLinking CXX executable example_effort[0m
+[0.725s] [100%] [32m[1mLinking CXX executable example_ackermann_drive[0m
+[0.772s] [100%] Built target example_gripper
+[0.772s] [100%] Built target example_position
+[0.773s] [100%] Built target example_tricycle_drive
+[0.775s] [100%] Built target example_diff_drive
+[0.775s] [100%] Built target example_effort
+[0.776s] [100%] Built target example_velocity
+[0.780s] [100%] Built target example_ackermann_drive
+[0.788s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos -- -j24 -l24
+[0.789s] Invoking command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos
+[0.794s] -- Install configuration: ""
+[0.794s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch
+[0.794s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py
+[0.794s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/ackermann_drive_example.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_velocity.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_effort.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/pendulum_example_effort.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/pendulum_example_position.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/diff_drive_example_namespaced.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/tricycle_drive_example.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/cart_example_position.launch.py
+[0.795s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//launch/diff_drive_example.launch.py
+[0.796s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf
+[0.796s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos//urdf/test_cart_position.xacro.urdf
+[0.796s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_position
+[0.796s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_position" to ""
+[0.796s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_velocity
+[0.796s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_velocity" to ""
+[0.796s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_effort
+[0.797s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_effort" to ""
+[0.797s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_diff_drive
+[0.797s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_diff_drive" to ""
+[0.797s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_tricycle_drive
+[0.797s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_tricycle_drive" to ""
+[0.797s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_ackermann_drive
+[0.797s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_ackermann_drive" to ""
+[0.797s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_gripper
+[0.797s] -- Set runtime path of "/home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/lib/ign_ros2_control_demos/example_gripper" to ""
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/ign_ros2_control_demos
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/ign_ros2_control_demos
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/ament_prefix_path.sh
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/ament_prefix_path.dsv
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/path.sh
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/environment/path.dsv
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.bash
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.sh
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.zsh
+[0.798s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/local_setup.dsv
+[0.799s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.dsv
+[0.799s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ament_index/resource_index/packages/ign_ros2_control_demos
+[0.799s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/cmake/ign_ros2_control_demosConfig.cmake
+[0.799s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/cmake/ign_ros2_control_demosConfig-version.cmake
+[0.799s] -- Installing: /home/redpaladin/Projects/helios_ws/install/ign_ros2_control_demos/share/ign_ros2_control_demos/package.xml
+[0.801s] Invoked command in '/home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control_demos:/home/redpaladin/Projects/helios_ws/install/gz_ros2_control:/home/redpaladin/Projects/helios_ws/install/px4_ros_com:/home/redpaladin/Projects/helios_ws/install/px4_msgs:/usr/lib/x86_64-linux-gnu/cmake:/home/redpaladin/Projects/helios_ws/install/helios:/home/redpaladin/Projects/real_steel_ws/install/shadow:/opt/ros/humble LD_LIBRARY_PATH=/home/redpaladin/Projects/helios_ws/install/gz_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/redpaladin/Projects/helios_ws/build/ign_ros2_control_demos

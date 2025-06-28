@@ -1,4 +1,4 @@
 [console_scripts]
 helios_tf_publisher = helios.helios_tf_publisher:main
+helios_tf_publisher_updated = helios.helios_tf_publisher_updated:main
 keyboard_control = helios.keyboard_control:main
-
