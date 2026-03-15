@@ -1,0 +1,83 @@
+services:
+  # ====================
+  # PX4 SITL + Gazebo Garden
+  # ====================
+  px4-sitl:
+    build:
+      context: ..
+      dockerfile: docker/px4.Dockerfile
+    container_name: px4_sitl
+    network_mode: host
+    ipc: host
+    privileged: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - WAYLAND_DISPLAY=${WAYLAND_DISPLAY}
+      - XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR}
+      - QT_X11_NO_MITSHM=1
+      # Tell PX4 SITL to use Gazebo Garden backend
+      - PX4_GZ_STANDALONE=0
+      # uXRCE-DDS agent address - localhost since all on host network
+      - XRCE_DDS_AG_IP=127.0.0.1
+      - FASTDDS_BUILTIN_TRANSPORTS=UDPv4
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XDG_RUNTIME_DIR}/wayland-0:/tmp/wayland-0:rw
+      # Mount PX4 Autopilot - build inside container, not in image
+      - ../PX4-Autopilot:/px4:rw
+      # Shared px4_msgs build (read only in this container)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
+
+  # ====================
+  # MicroXRCE-DDS Agent
+  # ====================
+  micro-xrce:
+    image: microros/micro-ros-agent:humble
+    container_name: micro_xrce
+    network_mode: host
+    ipc: host
+    environment:
+      - FASTDDS_BUILTIN_TRANSPORTS=UDPv4
+    command: udp4 --port 8888
+    restart: unless-stopped
+
+  # ====================
+  # ROS 2 Dev - All Autonomy Nodes
+  # ====================
+  ros2-dev:
+    build:
+      context: ..
+      dockerfile: docker/ros2.Dockerfile
+    container_name: ros2_dev
+    network_mode: host
+    ipc: host
+    privileged: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - WAYLAND_DISPLAY=${WAYLAND_DISPLAY}
+      - XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR}
+      - QT_X11_NO_MITSHM=1
+      - ROS_DOMAIN_ID=0
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - FASTDDS_BUILTIN_TRANSPORTS=UDPv4
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XDG_RUNTIME_DIR}/wayland-0:/tmp/wayland:0-rw
+      - ..:/ros2_ws:rw
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true

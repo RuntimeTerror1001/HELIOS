@@ -1,0 +1,14 @@
+build/
+install/
+log/
+PX4-Autopilot/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/settings.json
+.idea/
+*.swp
+*.engine
+*.onnx
+*.pt
+.vscode
