@@ -1,0 +1,56 @@
+# ros_gz_bridge mappings
+# FORMAT: gz_topic_name, ros_topic_name, gz_type, ros_type, direction
+
+- gz_topic_name: "/lidar/points/points"
+  ros_topic_name: "lidar/points"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/camera/left/image_raw"
+  ros_topic_name: "camera/left/image_raw"
+  gz_type_name: "gz.msgs.Image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/camera/right/image_raw"
+  ros_topic_name: "camera/right/image_raw"
+  gz_type_name: "gz.msgs.Image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/camera/depth/image_raw"
+  ros_topic_name: "camera/depth/image_raw"
+  gz_type_name: "gz.msgs.Image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/camera/left/camera_info"
+  ros_topic_name: "camera/left/camera_info"
+  gz_type_name: "gz.msgs.CameraInfo"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/camera/right/camera_info"
+  ros_topic_name: "camera/right/camera_info"
+  gz_type_name: "gz.msgs.CameraInfo"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/world/helios_world/model/x500_helios_0/link/base_link/sensor/imu_sensor/imu"
+  ros_topic_name: "imu/data"
+  gz_type_name: "gz.msgs.IMU"
+  ros_type_name: "sensor_msgs/msg/Imu"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/world/helios_world/model/x500_helios_0/link/base_link/sensor/air_pressure_sensor/air_pressure"
+  ros_topic_name: "air_pressure"
+  gz_type_name: "gz.msgs.FluidPressure"
+  ros_type_name: "sensor_msgs/msg/FluidPressure"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/world/helios_world/model/x500_helios_0/link/base_link/sensor/navsat_sensor/NavSat"
+  ros_topic_name: "gps/fix"
+  gz_type_name: "gz.msgs.NavSat"
+  ros_type_name: "sensor_msgs/msg/NavSatFix"
+  direction: GZ_TO_ROS

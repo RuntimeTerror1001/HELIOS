@@ -20,12 +20,20 @@ services:
       # uXRCE-DDS agent address - localhost since all on host network
       - XRCE_DDS_AG_IP=127.0.0.1
       - FASTDDS_BUILTIN_TRANSPORTS=UDPv4
+      - PX4_GZ_MODEL=x500_helios
+      - PX4_SIM_MODEL=x500_helios
+      - PX4_GZ_WORLD=helios_world
+      - PX4_UXRCE_DDS_NS=
+      - GZ_SIM_RESOURCE_PATH=/helios_models:/helios_worlds:/px4/Tools/simulation/gz/models:/px4/Tools/simulation/gz/worlds
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ${XDG_RUNTIME_DIR}/wayland-0:/tmp/wayland-0:rw
       # Mount PX4 Autopilot - build inside container, not in image
       - ../PX4-Autopilot:/px4:rw
       # Shared px4_msgs build (read only in this container)
+      - ../models:/helios_models:ro
+      - ../worlds:/helios_worlds:ro
+      - ../worlds/helios_world.sdf:/px4/Tools/simulation/gz/worlds/helios_world.sdf:ro
     deploy:
       resources:
         reservations:
@@ -72,6 +80,8 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ${XDG_RUNTIME_DIR}/wayland-0:/tmp/wayland:0-rw
       - ..:/ros2_ws:rw
+      - ../models:/helios_models:ro
+      - ../worlds:/helios_worlds:ro
     deploy:
       resources:
         reservations:

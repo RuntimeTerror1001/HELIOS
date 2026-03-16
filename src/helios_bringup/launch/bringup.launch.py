@@ -8,14 +8,21 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description() -> LaunchDescription:
     pkg = FindPackageShare("helios_bringup")
 
-    # Start offboard bridge first
+    # 1. Sensor Bridge + static TF
+    sensors = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution([pkg, "launch", "sensors.launch.py"])
+        )
+    )
+
+    # 2. Offboard Bridge Node
     offboard = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([pkg, "launch", "offboard.launch.py"])
         )
     )
 
-    # Give nodes 1 second to come up, then start lifecycle manager
+    # 3. Lifecycle Manager - give nodes 1s to come up
     lifecycle = TimerAction(
         period=1.0,
         actions=[
@@ -27,4 +34,4 @@ def generate_launch_description() -> LaunchDescription:
         ],
     )
 
-    return LaunchDescription([offboard, lifecycle])
+    return LaunchDescription([sensors, offboard, lifecycle])
