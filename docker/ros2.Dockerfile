@@ -69,6 +69,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-ompl \
     ros-humble-pcl-ros \
     ros-humble-pcl-conversions \
+    ros-humble-sophus \
     && rm -rf /var/lib/apt/lists/*
 
 # ====================

@@ -120,6 +120,56 @@
       <sensor name="imu_sensor" type="imu">
         <always_on>1</always_on>
         <update_rate>250</update_rate>
+        <imu>
+          <angular_velocity>
+            <x>
+              <noise type="gaussian">
+                <mean>0</mean>
+                <stddev>0.0015642</stddev> <dynamic_bias_stddev>0.0000099703</dynamic_bias_stddev> <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0</mean>
+                <stddev>0.0015642</stddev>
+                <dynamic_bias_stddev>0.0000099703</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0</mean>
+                <stddev>0.0015642</stddev>
+                <dynamic_bias_stddev>0.0000099703</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              </noise>
+            </z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x>
+              <noise type="gaussian">
+                <mean>0</mean>
+                <stddev>0.0039939</stddev> <dynamic_bias_stddev>0.000064886</dynamic_bias_stddev> <dynamic_bias_correlation_time>300.0</dynamic_bias_correlation_time>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0</mean>
+                <stddev>0.0039939</stddev>
+                <dynamic_bias_stddev>0.000064886</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>300.0</dynamic_bias_correlation_time>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0</mean>
+                <stddev>0.0039939</stddev>
+                <dynamic_bias_stddev>0.000064886</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>300.0</dynamic_bias_correlation_time>
+              </noise>
+            </z>
+          </linear_acceleration>
+        </imu>
       </sensor>
     </link>
 
